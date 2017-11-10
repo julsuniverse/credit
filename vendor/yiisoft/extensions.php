@@ -3,13 +3,13 @@
 $vendorDir = dirname(__DIR__);
 
 return array (
-  'yiisoft/yii2-bootstrap' => 
+  'yiisoft/yii2-swiftmailer' => 
   array (
-    'name' => 'yiisoft/yii2-bootstrap',
+    'name' => 'yiisoft/yii2-swiftmailer',
     'version' => '2.0.7.0',
     'alias' => 
     array (
-      '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap',
+      '@yii/swiftmailer' => $vendorDir . '/yiisoft/yii2-swiftmailer',
     ),
   ),
   'rmrevin/yii2-fontawesome' => 
@@ -30,6 +30,15 @@ return array (
       '@cebe/gravatar' => $vendorDir . '/cebe/yii2-gravatar/cebe/gravatar',
     ),
   ),
+  'yiisoft/yii2-bootstrap' => 
+  array (
+    'name' => 'yiisoft/yii2-bootstrap',
+    'version' => '2.0.7.0',
+    'alias' => 
+    array (
+      '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap',
+    ),
+  ),
   'dmstr/yii2-adminlte-asset' => 
   array (
     'name' => 'dmstr/yii2-adminlte-asset',
@@ -37,15 +46,6 @@ return array (
     'alias' => 
     array (
       '@dmstr' => $vendorDir . '/dmstr/yii2-adminlte-asset',
-    ),
-  ),
-  'yiisoft/yii2-swiftmailer' => 
-  array (
-    'name' => 'yiisoft/yii2-swiftmailer',
-    'version' => '2.0.7.0',
-    'alias' => 
-    array (
-      '@yii/swiftmailer' => $vendorDir . '/yiisoft/yii2-swiftmailer',
     ),
   ),
   'yiisoft/yii2-debug' => 
@@ -57,15 +57,6 @@ return array (
       '@yii/debug' => $vendorDir . '/yiisoft/yii2-debug',
     ),
   ),
-  'yiisoft/yii2-faker' => 
-  array (
-    'name' => 'yiisoft/yii2-faker',
-    'version' => '2.0.3.0',
-    'alias' => 
-    array (
-      '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
-    ),
-  ),
   'yiisoft/yii2-gii' => 
   array (
     'name' => 'yiisoft/yii2-gii',
@@ -75,13 +66,13 @@ return array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii',
     ),
   ),
-  'elisdn/yii2-composite-form' => 
+  'yiisoft/yii2-faker' => 
   array (
-    'name' => 'elisdn/yii2-composite-form',
-    'version' => '1.0.0.0',
+    'name' => 'yiisoft/yii2-faker',
+    'version' => '2.0.3.0',
     'alias' => 
     array (
-      '@elisdn/compositeForm' => $vendorDir . '/elisdn/yii2-composite-form/src',
+      '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
   'yiisoft/yii2-jui' => 
@@ -154,6 +145,15 @@ return array (
     'alias' => 
     array (
       '@kartik/rating' => $vendorDir . '/kartik-v/yii2-widget-rating',
+    ),
+  ),
+  'elisdn/yii2-composite-form' => 
+  array (
+    'name' => 'elisdn/yii2-composite-form',
+    'version' => '1.0.0.0',
+    'alias' => 
+    array (
+      '@elisdn/compositeForm' => $vendorDir . '/elisdn/yii2-composite-form/src',
     ),
   ),
 );

@@ -2,7 +2,8 @@
 
 namespace src\entities\company;
 
-use Yii;
+use src\helpers\Aliaser;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "company".
@@ -34,8 +35,51 @@ use Yii;
  * @property string $seo_desc
  * @property string $seo_keys
  */
-class Company extends \yii\db\ActiveRecord
+class Company extends ActiveRecord
 {
+    public static function create($name, $h1)
+    {
+        $company = new self();
+        $company->name = $name;
+        $company->alias = Aliaser::alias($name);
+        $company->h1 = $h1;
+
+        return $company;
+    }
+
+    public function setSeo($form)
+    {
+        $this->seo_title = $form->seo_title;
+        $this->seo_desc = $form->seo_desc;
+        $this->seo_keys = $form->seo_keys;
+    }
+
+    public function setFields($form)
+    {
+        $this->desc = $form->desc;
+        $this->text = $form->text;
+        $this->message = $form->message;
+        $this->vk_group = $form->vk_group;
+        $this->fb_group = $form->fb_group;
+        $this->max_sum = $form->max_sum;
+        $this->max_termin = $form->max_termin;
+        $this->age = $form->age;
+        $this->time_rewiew = $form->time_rewiew;
+        $this->pay = $form->pay;
+        $this->stars = $form->stars;
+        $this->raiting = $form->raiting;
+        $this->href = $form->href;
+        $this->checked = $form->checked;
+        $this->overpayments = $form->overpayments;
+        $this->on_main = $form->on_main;
+        $this->recommended = $form->recommended;
+    }
+
+    public function setPhoto($photo)
+    {
+        $this->photo = $photo;
+    }
+
     /**
      * @inheritdoc
      */
