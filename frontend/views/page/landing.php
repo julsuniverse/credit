@@ -61,7 +61,7 @@ $this->registerMetaTag([
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <?php } ?>
                                     </div>
-                                    <a href="<?=Url::toRoute(['main/company', 'alias' =>$comp->alias]);?>"><img class="company_logo" src="/frontend/web/img/<?= $comp->img;?>" alt="<?=$comp->name;?>"/></a>
+                                    <a href="<?=Url::toRoute(['main/company', 'alias' =>$comp->alias]);?>"><img class="company_logo" src="/frontend/web/img/<?= $comp->photo;?>" alt="<?=$comp->name;?>"/></a>
                                 </div>
                                 
                                 <div class="col-md-5 col-sm-12 col-xs-12">
@@ -83,7 +83,7 @@ $this->registerMetaTag([
                                     <div class="info_line">
                                         <p class="il_left">Рассмотрение</p>
                                         <div class="il_right">
-                                            <p><?= $comp->watch;?></p>
+                                            <p><?= $comp->time_review;?></p>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
@@ -168,16 +168,6 @@ $this->registerJs($script);
 </div>
 <?php } ?>
 
-<?php if($page->marked) { ?>
-<div class="landing_article" style="margin-top: 0;">
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <p style="background-color: #8fcdc0; padding: 10px;"><?= $page->marked;?></p>
-        </div>
-    </div>
-</div>
-<?php } ?>
-
 <?php if($page->expert_text) { ?>
 <div class="opinion">
     <div class="row">
@@ -223,11 +213,10 @@ $this->registerJs($script);
         ?>
         <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="ua_block">
-                <img src="/frontend/web/img/<?= $rec->$img ;?>" alt="<?= $a->h1 ;?>"/>
+                <img src="/frontend/web/img/<?= $a->photo ;?>" alt="<?= $a->h1 ;?>"/>
                 <div class="ua_block_title"><a href="<?=Url::toRoute(['main/landing', 'alias' =>$a->alias]);?>"><?= $a->h1 ;?></a></div>
                 <div class="dashed_line"></div>
                 <?php
-                    //$pos = strpos($a->text_1, ".");
                     mb_internal_encoding("UTF-8");
                     $text = mb_substr($a->short_desc, 0, 100);
                  ?>

@@ -38,12 +38,44 @@ class CompanyRepository
         return $company;
     }
 
+    public function getCompaniesByIds($ids)
+    {
+        if(!$company = Company::find()->where(['id' => $ids])->orderBy('raiting DESC')->all())
+            throw new \DomainException('Компании не найдены');
+        return $company;
+    }
+
     public function getRec()
     {
         if (!$company = Company::find()->where(['recommended' => 1])->limit(3)->orderBy('id DESC')->all()) {
             throw new NotFoundHttpException('Компании не найдены');
         }
         return $company;
+    }
+
+    public function getCompaniesSort($ids, $sortby, $sort, $pay, $old)
+    {
+        $query = Company::find()->where(['id'=>array_filter(explode(',', $ids))]);
+        if($old)
+            $query=  $query->andWhere(['<=', 'old', $old]);
+
+        if($pay)
+        {
+            $pays = explode("-", $pay);
+            $str="";
+            for($i=0; $i<count($pays)-1; $i++)
+                $str .= "`pay` like '%$pays[$i]%' OR ";
+            $str = substr($str, 0, -4);
+            $query = $query->andFilterWhere(['or',
+                $str
+            ]);
+        }
+
+        if($sortby)
+            $query=$query->orderBy($sortby.' '.$sort);
+        else
+            $query=$query->orderBy('raiting DESC');
+        return $query->all();
     }
 
     public function getCompaniesSortAll($sortby, $sort, $pay, $old)

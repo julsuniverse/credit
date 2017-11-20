@@ -52,6 +52,18 @@ return [
                     'route' =>'company/vse-kompanii',
                     'suffix' => '.html'
                 ],
+                [
+                    'pattern' => 'amp/<alias:.+>',
+                    'route' => 'page/landing-amp',
+                    'encodeParams' => false,
+                    'suffix' => '.html'
+                ],
+                [
+                    'pattern' => '<alias:.+>',
+                    'route' => 'page/landing',
+                    'encodeParams' => false,
+                    'suffix' => '.html'
+                ],
                 '<_a:about>' => 'site/<_a>',
                 'contact' => 'contact/index',
                 'signup' => 'auth/signup/signup',
