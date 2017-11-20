@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9373f98ff38aa05c00f9a1eff236150",
+    "hash": "c6862d2769cb8159656a2c7d55df1fb8",
+    "content-hash": "d50e5e7fe37453ef077371ef1813e279",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -44,7 +45,7 @@
                 "theme",
                 "web"
             ],
-            "time": "2017-10-09T16:32:18+00:00"
+            "time": "2017-10-09 16:32:18"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -205,7 +206,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2017-07-16T21:13:23+00:00"
+            "time": "2017-07-16 21:13:23"
         },
         {
             "name": "cebe/yii2-gravatar",
@@ -248,7 +249,7 @@
                 "gravatar",
                 "yii"
             ],
-            "time": "2013-12-10T17:49:58+00:00"
+            "time": "2013-12-10 17:49:58"
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
@@ -308,7 +309,7 @@
                 "theme",
                 "yii2"
             ],
-            "time": "2017-10-12T06:10:53+00:00"
+            "time": "2017-10-12 06:10:53"
         },
         {
             "name": "elisdn/yii2-composite-form",
@@ -352,7 +353,7 @@
                 "yii 2",
                 "yii2"
             ],
-            "time": "2017-06-28T11:09:08+00:00"
+            "time": "2017-06-28 11:09:08"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -399,7 +400,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-06-03T02:28:16+00:00"
+            "time": "2017-06-03 02:28:16"
         },
         {
             "name": "fortawesome/font-awesome",
@@ -447,7 +448,7 @@
                 "font",
                 "icon"
             ],
-            "time": "2016-10-24T15:52:54+00:00"
+            "time": "2016-10-24 15:52:54"
         },
         {
             "name": "rmrevin/yii2-fontawesome",
@@ -499,7 +500,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2017-01-11T14:05:47+00:00"
+            "time": "2017-01-11 14:05:47"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -553,7 +554,50 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-05-01T15:54:03+00:00"
+            "time": "2017-05-01 15:54:03"
+        },
+        {
+            "name": "tonyaxo/yii2-recaptcha",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tonyaxo/yii2-recaptcha.git",
+                "reference": "385602b3634dbf378af92ab3a0e1ea557acf7914"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tonyaxo/yii2-recaptcha/zipball/385602b3634dbf378af92ab3a0e1ea557acf7914",
+                "reference": "385602b3634dbf378af92ab3a0e1ea557acf7914",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-httpclient": "~2.0.1"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "recaptcha\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Bogatyrev",
+                    "email": "sergey@bogatyrev.me"
+                }
+            ],
+            "description": "Yii2 Google reCaptcha implementation",
+            "keywords": [
+                "extension",
+                "recaptcha",
+                "widget",
+                "yii2"
+            ],
+            "time": "2016-09-13 17:48:50"
         },
         {
             "name": "yiisoft/yii2",
@@ -653,7 +697,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-11-02T22:09:29+00:00"
+            "time": "2017-11-02 22:09:29"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -699,7 +743,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2017-10-09T19:48:22+00:00"
+            "time": "2017-10-09 19:48:22"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -749,7 +793,54 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2016-12-20T13:26:02+00:00"
+            "time": "2016-12-20 13:26:02"
+        },
+        {
+            "name": "yiisoft/yii2-httpclient",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-httpclient.git",
+                "reference": "0417cb05f810890297f79877ccf51865834fb394"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/0417cb05f810890297f79877ccf51865834fb394",
+                "reference": "0417cb05f810890297f79877ccf51865834fb394",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.13"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\httpclient\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "HTTP client extension for the Yii framework",
+            "keywords": [
+                "curl",
+                "http",
+                "httpclient",
+                "yii2"
+            ],
+            "time": "2017-11-03 11:22:03"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -799,7 +890,7 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2017-05-01T08:29:00+00:00"
+            "time": "2017-05-01 08:29:00"
         }
     ],
     "packages-dev": [
@@ -860,7 +951,7 @@
                 "gherkin",
                 "parser"
             ],
-            "time": "2016-10-30T11:50:56+00:00"
+            "time": "2016-10-30 11:50:56"
         },
         {
             "name": "bower-asset/jquery-ui",
@@ -990,7 +1081,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2017-09-29T00:03:44+00:00"
+            "time": "2017-09-29 00:03:44"
         },
         {
             "name": "codeception/verify",
@@ -1026,7 +1117,7 @@
                 }
             ],
             "description": "BDD assertion library for PHPUnit",
-            "time": "2017-01-09T10:58:51+00:00"
+            "time": "2017-01-09 10:58:51"
         },
         {
             "name": "doctrine/instantiator",
@@ -1080,7 +1171,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2017-07-22T11:58:36+00:00"
+            "time": "2017-07-22 11:58:36"
         },
         {
             "name": "fzaninotto/faker",
@@ -1130,7 +1221,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2017-08-15T16:48:10+00:00"
+            "time": "2017-08-15 16:48:10"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1195,7 +1286,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-03-20T17:10:46+00:00"
+            "time": "2017-03-20 17:10:46"
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
@@ -1248,7 +1339,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2017-10-01T12:55:30+00:00"
+            "time": "2017-10-01 12:55:30"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
@@ -1292,7 +1383,7 @@
                 "star",
                 "svg"
             ],
-            "time": "2017-11-03T07:22:19+00:00"
+            "time": "2017-11-03 07:22:19"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -1343,7 +1434,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-09-29T06:18:14+00:00"
+            "time": "2017-09-29 06:18:14"
         },
         {
             "name": "kartik-v/yii2-widget-fileinput",
@@ -1398,7 +1489,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-06-24T19:36:32+00:00"
+            "time": "2017-06-24 19:36:32"
         },
         {
             "name": "kartik-v/yii2-widget-rating",
@@ -1454,7 +1545,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2016-02-17T19:13:26+00:00"
+            "time": "2016-02-17 19:13:26"
         },
         {
             "name": "kartik-v/yii2-widget-select2",
@@ -1507,7 +1598,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-11-09T14:28:09+00:00"
+            "time": "2017-11-09 14:28:09"
         },
         {
             "name": "mihaildev/yii2-ckeditor",
@@ -1558,7 +1649,7 @@
                 "wysiwyg",
                 "yii"
             ],
-            "time": "2014-11-19T22:04:08+00:00"
+            "time": "2014-11-19 22:04:08"
         },
         {
             "name": "mihaildev/yii2-elfinder",
@@ -1609,7 +1700,7 @@
                 "filemanager",
                 "yii"
             ],
-            "time": "2017-01-06T23:35:14+00:00"
+            "time": "2017-01-06 23:35:14"
         },
         {
             "name": "moonlandsoft/yii2-phpexcel",
@@ -1654,7 +1745,7 @@
                 "xls",
                 "yii2"
             ],
-            "time": "2015-09-06T07:50:33+00:00"
+            "time": "2015-09-06 07:50:33"
         },
         {
             "name": "myclabs/deep-copy",
@@ -1699,7 +1790,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-10-19T19:58:43+00:00"
+            "time": "2017-10-19 19:58:43"
         },
         {
             "name": "phar-io/manifest",
@@ -1754,7 +1845,7 @@
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
-            "time": "2017-03-05T18:14:27+00:00"
+            "time": "2017-03-05 18:14:27"
         },
         {
             "name": "phar-io/version",
@@ -1801,7 +1892,7 @@
                 }
             ],
             "description": "Library for handling version information and constraints",
-            "time": "2017-03-05T17:38:23+00:00"
+            "time": "2017-03-05 17:38:23"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1855,7 +1946,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-09-11T18:02:19+00:00"
+            "time": "2017-09-11 18:02:19"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -1900,7 +1991,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-08-30T18:51:59+00:00"
+            "time": "2017-08-30 18:51:59"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -1947,7 +2038,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2017-07-14T14:27:02+00:00"
+            "time": "2017-07-14 14:27:02"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -2004,7 +2095,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2015-05-01T07:00:55+00:00"
+            "time": "2015-05-01 07:00:55"
         },
         {
             "name": "phpspec/php-diff",
@@ -2042,7 +2133,7 @@
                 }
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
-            "time": "2016-04-07T12:29:16+00:00"
+            "time": "2016-04-07 12:29:16"
         },
         {
             "name": "phpspec/prophecy",
@@ -2105,7 +2196,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2017-09-04T11:05:03+00:00"
+            "time": "2017-09-04 11:05:03"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2169,7 +2260,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-11-03T13:47:33+00:00"
+            "time": "2017-11-03 13:47:33"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2216,7 +2307,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2016-10-03T07:40:28+00:00"
+            "time": "2016-10-03 07:40:28"
         },
         {
             "name": "phpunit/php-text-template",
@@ -2257,7 +2348,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2015-06-21T13:50:34+00:00"
+            "time": "2015-06-21 13:50:34"
         },
         {
             "name": "phpunit/php-timer",
@@ -2306,7 +2397,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2017-02-26T11:10:40+00:00"
+            "time": "2017-02-26 11:10:40"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -2355,7 +2446,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2017-08-20T05:47:52+00:00"
+            "time": "2017-08-20 05:47:52"
         },
         {
             "name": "phpunit/phpunit",
@@ -2439,7 +2530,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-11-08T11:26:09+00:00"
+            "time": "2017-11-08 11:26:09"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2498,7 +2589,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2017-08-03T14:08:16+00:00"
+            "time": "2017-08-03 14:08:16"
         },
         {
             "name": "psr/http-message",
@@ -2548,7 +2639,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/log",
@@ -2595,7 +2686,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -2640,7 +2731,7 @@
             ],
             "description": "Looks up which function or method a line of code belongs to",
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-            "time": "2017-03-04T06:30:41+00:00"
+            "time": "2017-03-04 06:30:41"
         },
         {
             "name": "sebastian/comparator",
@@ -2704,7 +2795,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2017-11-03T07:16:52+00:00"
+            "time": "2017-11-03 07:16:52"
         },
         {
             "name": "sebastian/diff",
@@ -2756,7 +2847,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2017-08-03T08:09:46+00:00"
+            "time": "2017-08-03 08:09:46"
         },
         {
             "name": "sebastian/environment",
@@ -2806,7 +2897,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2017-07-01T08:51:00+00:00"
+            "time": "2017-07-01 08:51:00"
         },
         {
             "name": "sebastian/exporter",
@@ -2873,7 +2964,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2017-04-03T13:19:02+00:00"
+            "time": "2017-04-03 13:19:02"
         },
         {
             "name": "sebastian/global-state",
@@ -2924,7 +3015,7 @@
             "keywords": [
                 "global state"
             ],
-            "time": "2017-04-27T15:39:26+00:00"
+            "time": "2017-04-27 15:39:26"
         },
         {
             "name": "sebastian/object-enumerator",
@@ -2971,7 +3062,7 @@
             ],
             "description": "Traverses array structures and object graphs to enumerate all referenced objects",
             "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
-            "time": "2017-08-03T12:35:26+00:00"
+            "time": "2017-08-03 12:35:26"
         },
         {
             "name": "sebastian/object-reflector",
@@ -3016,7 +3107,7 @@
             ],
             "description": "Allows reflection of object attributes, including inherited and non-public ones",
             "homepage": "https://github.com/sebastianbergmann/object-reflector/",
-            "time": "2017-03-29T09:07:27+00:00"
+            "time": "2017-03-29 09:07:27"
         },
         {
             "name": "sebastian/recursion-context",
@@ -3069,7 +3160,7 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2017-03-03T06:23:57+00:00"
+            "time": "2017-03-03 06:23:57"
         },
         {
             "name": "sebastian/resource-operations",
@@ -3111,7 +3202,7 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-            "time": "2015-07-28T20:34:47+00:00"
+            "time": "2015-07-28 20:34:47"
         },
         {
             "name": "sebastian/version",
@@ -3154,7 +3245,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2016-10-03T07:35:21+00:00"
+            "time": "2016-10-03 07:35:21"
         },
         {
             "name": "stecman/symfony-console-completion",
@@ -3199,7 +3290,7 @@
                 }
             ],
             "description": "Automatic BASH completion for Symfony Console Component based applications.",
-            "time": "2016-02-24T05:08:54+00:00"
+            "time": "2016-02-24 05:08:54"
         },
         {
             "name": "studio-42/elfinder",
@@ -3257,7 +3348,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2017-10-07T12:19:28+00:00"
+            "time": "2017-10-07 12:19:28"
         },
         {
             "name": "symfony/browser-kit",
@@ -3314,7 +3405,7 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-10-02 06:42:24"
         },
         {
             "name": "symfony/console",
@@ -3382,7 +3473,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-10-02 06:42:24"
         },
         {
             "name": "symfony/css-selector",
@@ -3435,7 +3526,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-10-02 06:42:24"
         },
         {
             "name": "symfony/debug",
@@ -3491,7 +3582,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-10-02 06:42:24"
         },
         {
             "name": "symfony/dom-crawler",
@@ -3547,7 +3638,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-10-02 06:42:24"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3610,7 +3701,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-10-02 06:42:24"
         },
         {
             "name": "symfony/finder",
@@ -3659,7 +3750,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-10-02 06:42:24"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3718,7 +3809,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-10-11T12:05:26+00:00"
+            "time": "2017-10-11 12:05:26"
         },
         {
             "name": "symfony/yaml",
@@ -3773,7 +3864,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-05T14:43:42+00:00"
+            "time": "2017-10-05 14:43:42"
         },
         {
             "name": "theseer/tokenizer",
@@ -3813,7 +3904,7 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-            "time": "2017-04-07T12:08:54+00:00"
+            "time": "2017-04-07 12:08:54"
         },
         {
             "name": "webmozart/assert",
@@ -3863,7 +3954,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-11-23T20:04:58+00:00"
+            "time": "2016-11-23 20:04:58"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -3910,7 +4001,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-10-09T20:30:01+00:00"
+            "time": "2017-10-09 20:30:01"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -3957,7 +4048,7 @@
                 "faker",
                 "yii2"
             ],
-            "time": "2015-03-01T06:22:44+00:00"
+            "time": "2015-03-01 06:22:44"
         },
         {
             "name": "yiisoft/yii2-gii",
@@ -4010,7 +4101,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2016-03-18T14:09:46+00:00"
+            "time": "2016-03-18 14:09:46"
         },
         {
             "name": "yiisoft/yii2-jui",
@@ -4060,12 +4151,13 @@
                 "jQuery UI",
                 "yii2"
             ],
-            "time": "2016-07-22T22:26:59+00:00"
+            "time": "2016-07-22 22:26:59"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "tonyaxo/yii2-recaptcha": 20,
         "kartik-v/yii2-widget-fileinput": 20,
         "kartik-v/yii2-widget-select2": 20
     },

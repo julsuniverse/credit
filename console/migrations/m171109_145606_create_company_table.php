@@ -31,7 +31,7 @@ class m171109_145606_create_company_table extends Migration
             'max_sum' => $this->integer(10),
             'max_termin' => $this->integer(10),
             'age' => $this->integer(3),
-            'time_rewiew' => $this->string(),
+            'time_review' => $this->string(),
             'pay' => $this->string(),
             'stars' => $this->integer(1),
             'raiting' => $this->integer(10),

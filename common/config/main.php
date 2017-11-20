@@ -6,6 +6,7 @@ return [
         '@npm'=>'@vendor/npm-asset'
     ],
     'bootstrap'=>['\common\bootstrap\SetUp'],
+    'language' => 'ru-RU',
     'components' => [
         'cache' => [
             'class' => 'yii\caching\MemCache',

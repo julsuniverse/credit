@@ -51,5 +51,13 @@ class SignupService
         return $user;
 
     }
+
+    public function networkSignup($userInfo, $network)
+    {
+        $user = User::createNetwork($userInfo, $network);
+        $this->users->save($user);
+
+        return $user;
+    }
 }
 

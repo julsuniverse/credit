@@ -1,0 +1,1220 @@
+div, button, a, input, select
+{
+    outline: none;
+}
+.disabled {
+    pointer-events: none; /* ������ ������ �������������� */
+    cursor: default;  /* ������������� ������ � ���� ������� */
+    text-decoration:none;
+}
+.disabled .button {
+    background-color: #e1e1e1 !important;
+}
+.navbar, .navbar .navbar-header
+{
+    /*min-height: 152px;*/
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-header .logo_small
+{
+    display: none;
+}
+.znak
+{
+    display: none !important;    
+}
+.clear
+{
+    clear: both;
+}
+.recblock .findk {
+    width: 292px;
+    z-index: 9;
+    position: relative;
+    margin-top: -67px;
+    height: 82px;
+}
+.recblock .findk a {
+    width: 276px;
+    height: 61px;
+    padding:21px 35px;
+}
+@font-face
+{
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.woff');
+}
+
+@font-face
+{
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.woff');
+}
+p, div
+{
+     font-family: 'Roboto-Light';
+}
+.nocompanies
+{
+    text-align: center;
+    font-size:26px;
+    font-family: 'Roboto-Medium';
+}
+.navbar .ultop
+{
+    margin-left: 55px;
+    margin-top:50px;
+}
+.navbar-default .navbar-toggle {
+    margin-top: 55px;
+}
+.navbar .ultop li a
+{
+    text-decoration: none;
+    color:#000;
+    text-transform: uppercase;
+    font-size:24px;
+    font-family: 'Roboto-Medium';
+    margin-left: 15px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar .navbar-nav  a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+    background-color: inherit;
+    font-weight: bold;
+}
+.kf_block
+{
+    position: relative;
+    height: 455px;
+    margin-bottom: 55px;
+}
+.kf_block .dectop
+{
+    position: absolute;
+    z-index:3;
+    top: 5px;
+    width: 100%;
+}
+.kf_block .monets
+{
+    position: absolute;
+    z-index:1;
+    padding-right: 4px;
+    bottom: 11px;
+    width: 100%;
+}
+.kf_block .fon
+{
+    position: absolute;
+    z-index:2;
+    bottom: 0;
+    width: 100%;
+}
+.kf_block .fon img, .kf_block .monets img, .kf_block .dectop img, .kform .cont
+{
+    display: block;
+    margin: 0 auto;
+}
+.kform
+{
+    position: absolute;
+    z-index:4;
+    top: 85px;
+    width: 100%;
+}
+.kform .cont
+{
+    width: 730px;
+}
+.kform h3
+{
+    text-align: center;
+    color: #000;
+    font-family: 'Roboto-Light';
+    font-size: 24px;
+}
+.kform table
+{
+    width:90%;
+    color:#365750;
+    margin: 0 auto;
+}
+.kform table
+{
+    font-family: 'Roboto-Light';
+    font-size: 18px;
+}
+.kform table #count
+{
+    font-family: 'Roboto-Medium';
+    font-size: 24px;
+}
+.kform table .rub
+{
+    font-size: 24px;
+}
+.kform table .right
+{
+   text-align: right;
+   width: 75px;
+}
+.kform table .left
+{
+   width: 75px;
+}
+.kform table .right span
+{
+    margin-right: 13px;
+}
+.kform table .left span
+{
+    padding-left: 12px;
+}
+.kform table .center
+{
+    text-align: center;
+}
+#slider
+{
+    width: 88%;
+    margin: 0 auto;
+}
+.ui-slider-handle, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-default, .ui-widget-content .ui-state-default
+{
+    border: none;
+    background: #3e786c;
+    font-weight: normal;
+    color: #2b2b2b;
+    border-radius: 100%;
+    font-size: 17px;
+    outline: none;
+    cursor: pointer;
+}
+.ui-widget-header 
+{
+    border: 1px solid #365750;
+    background: #365750;
+}
+.kform .container
+{
+    width: 90%;
+    margin-top: 25px;
+}
+.kform .labels
+{
+    color:#475b52;
+    font-family: 'Roboto-Light';
+    font-size: 24px;
+}
+.kform select
+{
+    border-color: inherit;
+    border: none;
+    border-radius: 0;
+    background-color: inherit;
+    box-shadow: none;
+    border-bottom: 1px solid #365750;
+    font-size: 24px;
+    font-family: 'Roboto-Medium';
+    padding-top: 0px;
+    /*for WebKit*/
+    -webkit-appearance: none;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    background-image: url('../img/arrowselect.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-transition: none;
+    transition: none;
+}
+.kform select::-ms-expand {
+  display: none;
+}
+.kform select option
+{
+    background: #8fcdc0;
+}
+.kform .has-success .form-control
+{
+    box-shadow: none;
+}
+.findk, .nofindk
+{
+    width: 371px;
+    margin: 13px auto;
+    height: 103px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.nofindk span
+{
+    background-color: #e1e1e1;
+    display: block;
+    padding: 11px 15px;
+    width: 355px;
+    margin: 8px auto;
+    border-radius: 10px;
+    text-align:center;
+    font-family: 'Roboto-Light';
+}
+.nofindk span a
+{
+    color: #365750;
+    font-family: 'Roboto-Medium';
+    font-size: 15px;
+}
+.findk button, .findk a
+{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Roboto-Medium';
+    padding: 30px 35px;
+    background-color: #ffa800;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 355px;
+    height: 85px;
+    margin-top: 8px;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+}
+.findk button:hover, .findk a:hover
+{
+    background-color: #da9000;
+}
+.podborki
+{
+    background-image: url(../img/mainfootfon.png);
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    min-height: 444px;
+}
+.podborki .title
+{
+    color: #000;
+    font-size: 24px;
+    font-family: 'Roboto-Medium';
+    text-transform: uppercase;
+    padding-top: 55px;
+    height: 122px;
+}
+.podborki .title img
+{
+    margin-left: -32px;
+}
+.podborki a
+{
+    color: #000;
+    font-size: 18px;
+    font-family: 'Roboto-Light';
+    text-decoration: none;
+    margin-bottom:15px;
+    border-bottom: 2px dotted #000;
+    display: inline-block;
+}
+.podborki a:hover
+{
+    font-weight: bold;
+}
+.podborki .pod_title
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+}
+.podborki .pod_title p
+{
+    margin:25px 0 22px;
+}
+.footer
+{
+    min-height: 422px;
+    width: 100%;
+    background-image: url(../img/foot_fon.png);
+    background-position-x: right;
+}
+.footer .title
+{
+    color: #000;
+    font-size: 16px;
+    font-family: 'Roboto-Medium';
+    text-transform: uppercase;
+    padding-top: 55px;
+}
+.footer a
+{
+    color: #000;
+    font-size: 16px;
+    font-family: 'Roboto-Light';
+    text-decoration: none;
+    margin-bottom:15px;
+    display: inline-block;
+}
+.footer a:hover
+{
+    font-weight: bold;
+}
+.footer .last
+{
+    float: right;
+}
+/*.footer .last p
+{
+    font-size: 16px;
+    font-family: 'Roboto-Light';
+    margin-bottom:15px;
+}
+.footer .last p span 
+{
+    font-family: 'Roboto-Medium';
+}*/
+.footer .last .soca
+{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 29px;
+    margin-right: 11px;
+    display: inline;
+}
+.footer .last a:hover
+{
+    color: #999;
+}
+.footer .last img
+{
+    margin-top: 15px;
+}
+.footer .litcol
+{
+    margin-top: 55px;
+}
+.cb
+{
+    display: none;
+}
+.compinfo
+{
+    max-width: 1075px;
+    min-height: 410px;
+    background-color: #8fcdc0;
+    border-radius: 50px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 68px;
+}
+.combord
+{
+    border: 2px solid #000;
+    padding: 15px;
+    max-width: 1105px;
+    border-radius: 50px;
+    margin: 0 auto 20px;
+}
+.compinfo .left
+{
+    float: left;
+}
+.compinfo div
+{
+    position: relative;
+}
+.compinfo .left .logocomp
+{
+    /*width: 330px;
+    margin-left: 85px;*/
+    width: 204px;
+    margin-top: 30px;
+    margin-left: 148px;
+    z-index: 1;
+}
+.compinfo .left .locdec
+{
+    margin-top: -39px;
+    z-index: 2;
+    margin-left: 75px;
+}
+.compinfo .left h1
+{
+    font-size: 24px;
+    font-family: 'Roboto-Medium';
+    text-align: center;
+    margin-left: 64px;
+}
+.compinfo .right
+{
+    float: right;
+    padding-top: 60px;
+}
+.compinfo .right p
+{
+    font-size: 24px;
+    font-family: 'Roboto-Light';
+    text-align: right;
+    margin-right: 30px;
+    color: #000;
+}
+.compinfo .right p span
+{
+    font-size: 24px;
+    font-family: 'Roboto-Medium';
+    margin-left: 30px;
+    color: #365750;
+    width: 209px;
+    display: inline-block;
+    text-align:left;
+}
+.compinfo .right p span i
+{
+    font-size: 18px;
+    margin-right: 4px;
+}
+.compinfo .right p span img
+{
+    margin-left:20px;
+}
+.compinfo .right p span img:first-child
+{
+    margin-left:0;
+}
+.compinfo .desc p
+{
+    padding: 29px;
+    padding-bottom: 55px;
+    font-size: 18px;
+    font-family: 'Roboto-Light';
+    margin-bottom:0;
+}
+.onecompany .findk, .onecompany .nofindk
+{
+    margin-top: -71px;
+    z-index: 9;
+    position: relative;
+}
+.reviews
+{
+    margin-top: 40px;
+}
+.reviews .pod_title
+{
+    text-align: center;
+}
+.reviews .pod_title h2
+{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Roboto-Medium';
+}
+.reviews .pod_title img
+{
+    margin: 20px;
+}
+.add_title {
+    font-size: 30px;
+    line-height: 48px;
+    color: #3e3e3e;
+    font-family: 'Roboto-Light';
+}
+.add_title .fb {
+    padding: 2px 14px;
+}
+.add_title .vk {
+    padding: 3px 7px;
+}
+.add_title .fb, .add_title .vk {
+    color: #fff;
+    background-color: #666;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.add_title .fb:hover, .add_title .vk:hover {
+    color: #999;
+}
+.mobbr
+{
+    display: none;
+}
+.review 
+{
+    border-radius: 30px;
+    border: 2px dashed #8fcdc0;
+    padding-bottom: 15px;
+}
+.review img
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: block;
+    display: block;
+    margin: 8px auto;
+}
+.review .bord_img
+{
+    border: 2px solid #8fcdc0;
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    margin-left: 25px;
+    margin-top:7px;
+}
+.review_border
+{
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 4px #e8e8e8;
+    border: 10px solid #fff;
+    margin-bottom: 20px;
+    width: 99%;
+}
+.review .name 
+{
+    margin-top:15px;
+}
+.wall .wall_dec
+{
+    text-align: center;
+}
+.wall .wall_dec img
+{
+    width: 90%;
+    margin-bottom: 25px;
+    max-width: 405px;
+}
+.review .name a
+{
+    font-size: 24px;
+    color: #000;
+    font-family: 'Roboto-Light';
+}
+.review .name span
+{
+    margin-left: 15px;
+    font-size: 18px;
+}
+.review .name span i
+{
+    margin-right: 5px;
+    color: #365750;
+}
+.review p
+{
+    font-size: 18px;
+    color: #000;
+    font-family: 'Roboto-Light';
+    margin-top: 25px;
+}
+.review .date
+{
+    font-size: 18px;
+    color: #777;
+    font-family: 'Roboto-Light';
+    margin-top: 20px;
+}
+.review .likes
+{
+    margin-top: 65px;
+    font-size: 18px;
+    color: #777;
+    font-family: 'Roboto-Light';
+}
+.review .glyphicon-triangle-top
+{
+    color: #84ff00;
+    cursor: pointer;
+}
+.review .glyphicon-triangle-bottom
+{
+    color: #ff3c00;
+    cursor: pointer;
+}
+.reviews .add_review {
+    color: #3c3c3c;
+    font-size: 30px;
+    font-family: 'Roboto-Medium';
+    margin-top: 15px;
+}
+.reviews .review_text {
+    /* background-color: #f2f2f2; */
+    /* color: #c5c5c5; */
+    /* font-style: italic; */
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #8FCDC0;
+    padding: 30px 20px;
+    height: 160px;
+    width: 100%;
+    font-family: 'Roboto-Light';
+    border-radius: 30px;
+}
+
+.review_button
+{
+    text-align: right;
+}
+.review_button button {
+    color: #000;
+    padding: 6px 32px;
+    background-color: white;
+    text-align: center;
+    margin-top: 23px;
+    border: 2px solid #8FCDC0;
+    outline: none;
+    font-size: 25px;
+    font-family: 'Roboto-Medium';
+    border-radius: 30px;
+}
+
+.review_button button:hover
+{
+    border: 2px solid #ff6102;    
+}
+
+.review_mark
+{
+    margin-top: 10px;
+    font-family: Roboto-Light;
+    font-size: 18px; 
+    padding-left: 28px;
+} 
+.add_comment
+{
+    margin-bottom: 20px;
+    margin-top: 55px;
+}
+
+.add_comment_logout
+{
+    font-family: Roboto-Light;
+    font-size: 18px;
+    color: #000;
+    border: 2px solid #d9d9d9;
+    border-radius: 30px;
+    padding: 5px 40px;
+}
+
+.add_comment_logout:hover
+{
+    text-decoration: none;
+    border: 2px solid #8FCDC0;    
+}
+.wall h2 {
+    font-family: 'Roboto-Medium';
+    text-transform:uppercase;
+    font-size: 29px;
+    color: #3c3c3c;
+    margin-top: 80px;
+    margin-left: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.panel {
+    margin-top: 15px;
+}
+.panel-info {
+    border-color: #bce8f1;
+}
+.wall .photos img {
+    max-width: 400px;
+    width: 100%;
+}
+.wall .wall_text {
+    text-align: center;
+    word-break: break-all;
+    font-family: 'Roboto-Light';
+    margin-bottom: 15px;
+}
+.wall .photos {
+    text-align: center;
+}
+.wall .panel-footer {
+    text-align: right;
+}
+.recomend .pod_title
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto-Medium';
+    margin-top:30px;
+}
+.recomend .pod_title .ne_podhodit
+{
+    font-size:24px;
+    font-family: Roboto-Medium;
+}
+.recomend .pod_title img
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 404px;
+}
+.recomend table
+{
+    position: absolute;
+    top: 68px;
+    width: 80%;
+    max-width: 340px;
+    left: 42px;
+}
+.recomend .title
+{
+    font-size: 24px;
+    font-family: 'Roboto-Medium';
+    color:#000;
+}
+.recomend p i
+{
+    color:#365750;
+    margin-right: 5px;
+}
+.recomend .logo_comp_rec img
+{
+    width: 155px;
+    height: 95px;
+}
+.recomend .sumsrok
+{
+    text-align: right;
+    font-size: 18px;
+    font-family: 'Roboto-Light';
+    color:#000;
+    padding-top: 10px;
+}
+.recomend .sumsrok p
+{
+    margin-right: 25px;
+}
+.recomend .sumsrokval
+{
+    color: #365750;
+    font-size: 18px;
+    font-family: 'Roboto-Medium';
+    padding-top: 10px;
+}
+.recomend .desc
+{
+    font-size: 18px;
+    font-family: 'Roboto-Light';
+    padding-top: 22px;
+    text-align: center;
+    color:#000;
+}
+.recblock
+{
+    height: 455px;
+    width: 100%;
+    max-width: 364px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.recblock .status_img
+{
+       position: absolute;
+    bottom: 75px;
+    right: 32px;
+}
+.recblock .imgbl
+{
+    width: 100%;
+    height: 455px;
+}
+
+.venzel
+{
+    margin: 5px auto 10px;
+    display: block;
+}
+.recimg
+{
+    height: 50px;
+    /*line-height: 87px;*/
+    text-align: center;
+}
+
+.name_stars
+{
+    text-align: center;    
+}
+
+.recimg .img
+{
+    max-height: 50px;
+}
+
+.logo_comp_rec
+{
+    max-height: 50px;
+}
+#totop
+{
+    bottom: 5px;
+    cursor: pointer;
+    display: none;
+    font-size: 150%;
+    position: fixed;
+    right: 5px;
+    opacity: 0.3;
+    z-index: 9;
+}
+#totop:hover
+{
+    opacity: 1;
+}.green
+{
+    background-color: #8fcdc0;
+}
+.green p, .green span
+{
+    background-color: #8fcdc0 !important;
+    padding: 10px !important;
+    display: block !important;
+}
+
+.about_portal
+{
+    text-align: right;
+}
+
+.about_portal a
+{
+    font-size: 15px;
+}
+.wall .col-sm-6:nth-child(odd) {
+    float: left;
+}
+.wall .col-sm-6:nth-child(even) {
+    float: right;
+}
+@media screen and (min-width:1200px)
+{
+    .footer .bigcol
+    {
+        width: 19.666667%;
+    }
+    .footer .litcol
+    {
+        width: 25.333333%;
+    }
+    .podborki .last
+    {
+        float: right;
+        margin-right: 125px;
+    }
+    .recblock .imgbl
+    {
+        width: 364px;
+    }
+    .recblock .status_img {
+        right: 28px;
+    }
+}
+
+@media screen and (max-width:1230px)
+{
+    .minusmarg
+    {
+        padding-left: 34px;
+    }
+}
+@media screen and (max-width:1200px)
+{
+    .review .bord_img
+    {
+        margin-left: 0;
+    }
+    .recomend table
+    {
+        margin-left: 21px;
+            left: inherit;
+    }
+    .recblock .status_img {
+        margin-left: 17px;
+        right: inherit;
+    }
+}
+@media screen and (max-width:1125px)
+{
+    .compinfo .left {
+        float: none;
+    }
+    .compinfo .divimg {
+        margin: auto;
+        width: 353px;
+    }
+    .compinfo .left .logocomp {
+        margin-left: 10px;
+    }
+    .compinfo .left .locdec {
+        margin-left: 0;
+    }
+    .compinfo .left h1
+    {
+        margin-left: 0;
+    }
+    .compinfo .right {
+        float: none;
+        padding-top: 30px;
+    }
+    .compinfo .right p
+    {
+        text-align: center;
+        margin-right: 0;
+    }
+    .compinfo .right p span
+    {
+        display: inline;
+    }
+}
+@media screen and (max-width:1080px)
+{    
+    .kf_block .monets
+    {
+        display: none;
+    }
+    .navbar .ultop li a {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:991px)
+{    
+    .navbar-default .container
+    {
+        width:97%;
+    }
+    .cb
+    {
+        clear: both;
+        display: block;
+    }
+    .podborki
+    {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .review .likes {
+        margin-top: 0;
+        float: right;
+    }
+    .recblock .status_img {
+        bottom: 46px
+    }
+    
+    .company_block .proveren 
+    {
+        /* right: 18px; */
+        max-width: 95%;
+        height: 165px;
+        left: 0;
+    }
+
+
+}
+@media screen and (max-width:901px)
+{    
+    .navbar .ultop
+    {
+        margin-left: 0;
+    }
+    .navbar-default .container
+    {
+        width:100%;
+    }
+}
+@media screen and (max-width:825px)
+{    
+    .navbar .ultop li a {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width:767px)
+{
+    .footer
+    {
+        text-align: center;
+    }
+    .footer .last {
+        float: inherit;
+    }
+    
+    .navbar-header .logo_small
+    {
+        display: block;
+        margin-top: 17px;
+    }
+    
+    .navbar-header .logo_big
+    {
+        display: none;
+    }
+    
+    .mob_menu
+    {
+        margin-top: 30px !important;
+    }
+    
+    .compinfo .desc, .wall
+    {
+        display: none;
+    }
+    .znak
+    {
+        display: inline !important;    
+    }
+    .foottitle
+    {
+        cursor: pointer;
+    }
+    .acdiv1, .acdiv2, .acdiv3, .acdiv4
+    {
+        display: none;    
+    }
+}
+@media screen and (max-width:750px)
+{    
+    .kform .cont {
+        width: 100%;
+    }
+    .kf_block .fon img
+    {
+        width: 100%;
+        height: 441px;
+    }
+}
+@media screen and (max-width:630px)
+{    
+    .kform .labels {
+        font-size: 15px;
+    }
+    .kform select {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .compinfo .right p, .compinfo .right p span {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:490px)
+{
+    .findk button, .findk a, .nofindk span {
+        padding: 7px 35px;
+        width: 230px;
+    }
+    .findk a {
+        padding-top: 17px;
+    }
+    .findk {
+        width: 248px;
+    }
+    .nofindk {
+        width: 248px;
+        height: 157px;
+    }
+    .compinfo .right p, .compinfo .right p span {
+    font-size: 18px;
+    }
+    .compinfo .right p span
+    {
+        display: block;
+        float: right;
+        width: inherit;
+        margin-right:20px;
+    }
+    .compinfo .right p
+    {
+        margin-top: 30px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .compinfo .right p span img
+    {
+        height: 18px;
+    }
+    .reviews .pod_title img
+    {
+        width: 100%;    
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width:437px)
+{
+    .podborki .pod_title img
+    {
+        width:100%;
+    }
+    .compinfo .divimg
+    {
+        width:90%;
+    }
+    .compinfo .left .logocomp{
+        margin-left: 0;
+        width: 100%;
+    }
+    .compinfo .left .locdec{
+        width: 100%;
+    }
+    .review p, .compinfo .desc p
+    {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 415px)
+{
+    .kform .labels {
+        font-size: 15px;
+        height: 47px;
+        display: inline-block;
+    }
+    #credit-form
+    {
+        margin-top: -20px;
+    }
+    .mobbr
+    {
+        display: block;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .recblock .status_img
+    {
+        display: none;
+    }
+    .recblock .findk a {
+        width: 220px;
+        padding: 21px 0;
+    }
+    .recblock .findk {
+    width: 240px;
+    }
+    .recblock .logo_comp_rec
+    {
+            width: 120px;
+    }
+    .sumsrok p:first-child, .sumsrokval p:first-child
+    {
+        margin-top: 7px;
+    }
+    
+    .recomend .sumsrok p 
+    {
+    margin-right: 20px;
+    }
+}

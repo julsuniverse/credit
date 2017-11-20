@@ -20,6 +20,7 @@ class ComposerStaticInite51d8a4aeddc8ded345529230820c9e6
         array (
             'yii\\swiftmailer\\' => 16,
             'yii\\jui\\' => 8,
+            'yii\\httpclient\\' => 15,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
             'yii\\debug\\' => 10,
@@ -30,6 +31,7 @@ class ComposerStaticInite51d8a4aeddc8ded345529230820c9e6
         'r' => 
         array (
             'rmrevin\\yii\\fontawesome\\' => 24,
+            'recaptcha\\' => 10,
         ),
         'p' => 
         array (
@@ -112,6 +114,10 @@ class ComposerStaticInite51d8a4aeddc8ded345529230820c9e6
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-jui',
         ),
+        'yii\\httpclient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-httpclient',
+        ),
         'yii\\gii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-gii',
@@ -139,6 +145,10 @@ class ComposerStaticInite51d8a4aeddc8ded345529230820c9e6
         'rmrevin\\yii\\fontawesome\\' => 
         array (
             0 => __DIR__ . '/..' . '/rmrevin/yii2-fontawesome',
+        ),
+        'recaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tonyaxo/yii2-recaptcha',
         ),
         'phpDocumentor\\Reflection\\' => 
         array (

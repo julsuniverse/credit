@@ -1,6 +1,9 @@
 <?php
 namespace src\repositories;
 use src\entities\User;
+use yii\db\ActiveRecord;
+use yii\web\NotFoundHttpException;
+
 class UserRepository
 {
     public function findByUsernameOrEmail($value): ?User
@@ -53,5 +56,19 @@ class UserRepository
     {
         if(User::find()->where(['username' => $username])->limit(1)->one())
             throw new \DomainException('Username is alredy exist');
+    }
+
+    /**
+     * @param $userInfo
+     * @param $network
+     * @return null|ActiveRecord
+     * @throws NotFoundHttpException
+     */
+    public function findUserWithNetwork($userInfo, $network) : ?ActiveRecord
+    {
+        $id = $network.'id'.$userInfo['id'];
+        $email = 'from_'.$network.'='.$userInfo['email'];
+        $user = User::find()->where(['user_id'=> $id])->orWhere(['email' => $email])->one();
+        return $user;
     }
 }

@@ -20,13 +20,23 @@ use yii\web\IdentityInterface;
  * @property integer $created_at
  * @property integer $updated_at
  * @property string $password write-only password
+ * @property string $user_id
+ * @property string $name
+ * @property string $photo
+ * @property integer $friends
+ * @property integer $groups
+ * @property integer $photos
+ * @property integer $audios
+ * @property integer $followers
+ * @property integer $ball
  */
 class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_WAIT = 0;
     const STATUS_ACTIVE = 10;
+    public $user_href;
 
-    public static function create($username, $email, $password)
+    public static function create($username, $email, $password) : User
     {
         $user = new static();
         $user->username = $username;
@@ -36,6 +46,43 @@ class User extends ActiveRecord implements IdentityInterface
         $user->status = self::STATUS_WAIT;
         $user->email_confirm_token = Yii::$app->security->generateRandomString();
         return $user;
+    }
+
+    public static function createNetwork($userInfo, $network) : User
+    {
+        $user = new static();
+        $user->username = $network.'_id= '.$userInfo['id'];
+        $user->email = $userInfo['email'] ? "from_".$network."=".$userInfo['email'] : $userInfo['id'].'noemail@a.a';
+        $user->setPassword($userInfo['id']);
+        $user->generateAuthKey();
+        $user->friends = $userInfo['friends'];
+        $user->status = User::STATUS_ACTIVE;
+
+        if($network == 'fb') {
+            $user->name = $userInfo['name'];
+            $user->photos = $userInfo['photos'];
+            $user->user_id = $network.'id'.$userInfo['id'];
+            $user->photo = $userInfo['picture'];
+        }
+
+        if($network == 'vk') {
+            $user->name=$userInfo['first_name']." ".$userInfo['last_name'];
+            $user->groups=$userInfo['groups'];
+            $user->followers=$userInfo['followers_count'];
+            $user->audios=$userInfo['audios'];
+            $user->user_id='id'.$userInfo['uid'];
+            $user->photo=$userInfo['photo_200_orig'];
+            $user->photos=$userInfo['photos'];
+        }
+
+        return $user;
+    }
+
+    public function afterFind()
+    {
+        if($this->user_id{0}=='f' && $this->user_id{1}=="b")
+            $this->user_href="https://www.facebook.com/".substr($this->user_id, 4);
+        else if($this->user_id{0}=='i' && $this->user_id{1}=="d") $this->user_href="https://vk.com/".$this->user_id;
     }
 
     /**

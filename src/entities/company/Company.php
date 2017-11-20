@@ -21,7 +21,7 @@ use yii\db\ActiveRecord;
  * @property integer $max_sum
  * @property integer $max_termin
  * @property integer $age
- * @property string $time_rewiew
+ * @property string $time_review
  * @property string $pay
  * @property integer $stars
  * @property integer $raiting
@@ -37,6 +37,8 @@ use yii\db\ActiveRecord;
  */
 class Company extends ActiveRecord
 {
+    public $termin;
+
     public static function create($name, $h1)
     {
         $company = new self();
@@ -64,7 +66,7 @@ class Company extends ActiveRecord
         $this->max_sum = $form->max_sum;
         $this->max_termin = $form->max_termin;
         $this->age = $form->age;
-        $this->time_rewiew = $form->time_rewiew;
+        $this->time_review = $form->time_review;
         $this->pay = $form->pay;
         $this->stars = $form->stars;
         $this->raiting = $form->raiting;
@@ -96,7 +98,7 @@ class Company extends ActiveRecord
         return [
             [['name', 'alias', 'h1'], 'required'],
             [['max_sum', 'max_termin', 'age', 'stars', 'raiting', 'checked', 'overpayments', 'on_main', 'recommended'], 'integer'],
-            [['name', 'alias', 'h1', 'desc', 'text', 'photo', 'message', 'vk_group', 'fb_group', 'time_rewiew', 'pay', 'href', 'last_upd', 'seo_title', 'seo_desc', 'seo_keys'], 'string', 'max' => 255],
+            [['name', 'alias', 'h1', 'desc', 'text', 'photo', 'message', 'vk_group', 'fb_group', 'time_review', 'pay', 'href', 'last_upd', 'seo_title', 'seo_desc', 'seo_keys'], 'string', 'max' => 255],
         ];
     }
 
@@ -119,7 +121,7 @@ class Company extends ActiveRecord
             'max_sum' => 'Максимальная сумма кредита',
             'max_termin' => 'Максимальный срок кредита (в днях)',
             'age' => 'Возраст заемщика',
-            'time_rewiew' => 'Время рассмотрения',
+            'time_review' => 'Время рассмотрения',
             'pay' => 'Способы выплат',
             'stars' => 'Звезд',
             'raiting' => 'Рейтинг',
@@ -133,5 +135,21 @@ class Company extends ActiveRecord
             'seo_desc' => 'Seo Description',
             'seo_keys' => 'Seo Keywords',
         ];
+    }
+
+    public function afterFind()
+    {
+        if($this->age==1) $this->age='18 лет';
+        else if($this->age==2) $this->age='20 лет';
+        else if($this->age==3) $this->age='21 года';
+
+        if($this->max_termin<=30) {$this->termin=$this->max_termin." дней";}
+        else if($this->max_termin>30 && $this->max_termin<=180) {$this->termin=round($this->max_termin/30, 1)." месяца";}
+        else if($this->max_termin>180) {$this->termin=round($this->max_termin/365, 2)." лет";}
+    }
+
+    public function getReviews()
+    {
+        return $this->hasMany(Review::className(), ['company_id' => 'id']);
     }
 }

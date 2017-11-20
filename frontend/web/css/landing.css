@@ -1,0 +1,612 @@
+
+{
+    font-family: Roboto-Medium;
+}
+
+ .lan_title,  .lan_title img
+{
+    text-align: center;
+}
+
+ .lan_title img
+{
+    margin-top: 4px;
+    max-width: 100%;
+}
+
+ h1
+{
+    font-family: Roboto-Medium;
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+/* === Фильтры === */
+.filters_l1, .filters_l2
+{
+    margin-top: 26px;
+}
+
+ .sort
+{
+    margin: 0 auto;
+}
+
+ .sort .sort_left,  .sort .sort_right, 
+ .payment .payment_left,  .payment .payment_right
+{
+    display: block;
+}
+
+ .sort .sort_left,  .sort a,
+ .payment .payment_left,  .payment a,
+ .age .age_left
+{
+    float: left;
+}
+
+ .sort .sort_right, 
+ .payment .payment_right,
+ .age .age_right
+{
+    float: right;
+}
+
+/* Завитушки */
+ .sort .sort_left img,
+ .payment .payment_left img
+{
+    margin-right: 17px;
+}
+
+/* Картинки оплаты */
+ .payment .payment_right img
+{
+    max-width: 38px;
+    max-height: 36px;  
+    display: block;
+    margin: 11px auto 0;  
+}
+
+ .sort a
+{
+    margin-right: 30px;
+    padding: 9px 100px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-family: Roboto-Light;
+}
+
+ .sort a:last-child,  .payment a:last-child
+{
+    margin-right: 0;
+}
+
+ .payment a
+{
+    margin-right: 29px;
+    border: 2px solid #d9d9d9;
+    border-radius: 19px;
+    text-decoration: none;
+    color: #000;
+    font-family: Roboto-Light;
+    width: 65px;
+    height: 65px; 
+    font-size: 18px;  
+}
+
+ .payment a:first-child
+{
+    padding: 18px 14px; 
+}
+
+ .sort p, 
+ .payment p,
+ .age p
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
+ .payment p,
+ .age p
+{
+    margin: 20px 0;    
+}
+
+ .sort .active,  .sort a:hover, 
+ .payment .active,  .payment a:hover
+{
+    border: 2px solid #ff6102;    
+}
+
+ .sort .active_rev, 
+ .sort .active:hover
+{
+    border: 2px solid #8fcdc0;       
+}
+
+ .age .age_right button
+{
+    width: 255px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    text-align: left;
+    margin-top: 14px;
+    font-family: Roboto-Light;
+    font-size: 18px;
+}
+
+ .age .age_right button:hover,  .age .age_right button:active
+{
+    border-bottom: 1px solid #ff6102;    
+}
+
+ .age .age_right button i
+{
+    float: right;
+    color: #d9d9d9;
+}
+
+ .age .age_right button:hover, 
+ .age .age_right button:focus, 
+ .age .age_right button:active, 
+ .age .age_right .open,
+ .age .age_right .open:focus,
+ .age .age_right .open:active,
+ .age .age_right .open > .dropdown-toggle.btn-default
+{
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+ .age .age_right ul
+{
+    width: 255px;
+    border-radius: 0;
+}
+
+/* === Вывод компаний ===  */
+
+.company_block
+{
+    position: relative;
+}
+
+.company_block .proveren
+{
+    position: absolute;
+    top: 0;
+    right: 477px;
+}
+
+.company_list
+{
+    margin-top: 45px;    
+}
+.company
+{
+    margin-bottom: 17px;
+}
+
+.company .company_bg
+{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #e8e8e8;
+    padding: 9px 11px;
+}
+
+.company .company_bg .company_block
+{
+    border-radius: 30px;
+    border: 3px dotted #8fcdc0;   
+    padding: 12px 0; 
+}
+/* Лево */
+.company .company_bg .company_block .company_name
+{
+    font-family: Roboto-Light;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    height: 35px;
+    overflow: hidden;
+}
+.company .company_bg .company_block .company_name:hover
+{
+    font-weight:bold;
+}
+.company .company_bg .company_block .company_stars .star_full
+{
+    color: #365750;
+}
+
+.company .company_bg .company_block .company_stars i
+{
+    color: #e0e0e0;
+}
+
+.company .company_bg .company_block .company_logo
+{
+    margin-top: 5px;
+    max-height: 56px;
+}
+
+/* Центр */
+.company .company_bg .company_block .info_line:first-child, .company .company_bg .company_block .info_line:nth-child(2)
+{
+    border-bottom: 1px solid #8fcdc0;
+}
+
+.company .company_bg .company_block .info_line .il_left, 
+.company .company_bg .company_block .info_line .il_right
+{
+    display: block;
+}
+.company .company_bg .company_block .info_line .il_left
+{
+    float: left;
+    margin-right: 73px;
+    margin-bottom: 0px;
+    font-family: Roboto-Light;
+    font-size: 18px;
+}
+.company .company_bg .company_block .info_line .il_leftlast
+{
+    margin-right: 0;
+}
+.company .company_bg .company_block .info_line .il_right
+{
+   float: right;
+   font-size: 18px;
+/*   margin-bottom: 5px;
+   margin-top: 7px;*/
+   width: 155px;
+}
+
+.company .company_bg .company_block .info_line .il_right p
+{
+    margin: 3px 0 0 0;
+}
+
+.company .company_bg .company_block .info_line .il_left:nth-child(3),
+.company .company_bg .company_block .info_line .il_right:nth-child(3)
+{
+    margin-bottom: 12px;
+}
+
+.company .company_bg .company_block .info_line img
+{
+    margin-right: 10px;
+}
+
+/* Право */
+
+.company .company_bg .company_block a 
+{
+    color: #000;
+    font-size: 18px;
+}
+.company .company_bg .company_block a:hover
+{
+    text-decoration: none;
+}
+.company .company_bg .company_block a .button_bg
+{
+    border: 1px solid #2b2822;
+    border-radius: 10px;
+    padding: 7px;
+    margin-top: 18px;
+}
+
+.company .company_bg .company_block a .button_bg .button
+{
+    background-color: #ffa800;
+    border-radius: 10px;
+    padding: 27px 47px;
+    text-align: center;
+}
+
+.company .company_bg .company_block a .button_bg .button:hover
+{
+    background-color: #da9000;
+}
+
+/* === Тело статьи ===  */
+.landing_article
+{
+    margin-top: 23px;
+}
+.landing_article img
+{
+    max-width: 100% !important;
+    height: auto !important;
+}
+.landing_article ul, .landing_article ol, .landing_article p, .landing_article p > *
+{
+    font-family: Roboto-Light !important;
+    font-size: 18px !important;
+    margin: 15px 0 !important;
+}
+
+.opinion
+{
+    margin: 70px 0 50px;
+}
+
+.opin_venzel
+{
+    margin: -46px 0;   
+    width: 100%; 
+}
+
+.opinion .opin_inner
+{
+    padding: 0 5px;
+    border: 3px dotted #8fcdc0; 
+    border-radius: 30px;
+    margin: 0 13px
+}
+
+.opinion .opin_inner img
+{
+    display: block;
+    margin: 20px auto 0;
+}
+
+.opinion .opin_inner .expert_title
+{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.opinion .opin_inner p
+{
+    font-family: Roboto-Light;
+    font-size: 18px;
+}
+
+/* === === */
+.usefull_art
+{
+    margin-bottom: 50px;
+}
+.usefull_art .ua_title
+{
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.usefull_art .ua_title img
+{
+    max-width: 100%;
+}
+.usefull_art div
+{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Roboto-Medium;
+}
+
+.usefull_art .ua_block
+{
+    border: 3px solid #8fcdc0;
+    border-radius: 30px;
+    max-height: 345px;
+    height: 345px;
+}
+
+.usefull_art .ua_block img
+{
+    display: block;
+    margin: -40px auto 0;
+    height: 120px;
+    width: 120px;
+    border: 3px solid #8fcdc0;
+    border-radius: 100%;
+}
+
+.usefull_art .ua_block .ua_block_title
+{
+    font-size: 18px;
+    text-align: center;
+    padding: 0 54px;
+    margin:  15px 0 17px;
+}
+
+.usefull_art .ua_block .ua_block_title a
+{
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    height: 50px;
+}
+.usefull_art .ua_block .ua_block_title a:hover
+{
+    font-weight:bold;
+}
+.usefull_art .ua_block p
+{
+    font-family: Roboto-Light;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 26px 35px;
+}
+
+.usefull_art .ua_block .dashed_line
+{
+    height: 1px;
+    border-top: 1px dashed #8fcdc0;
+    margin: 21px 10px;
+}
+ 
+/* >992*/
+@media (min-width: 992px)
+{
+    .company .company_bg .company_block .container
+    {
+        width: 924px;
+    }   
+     
+}
+/* <992*/
+@media (max-width: 992px)
+{
+    .company .company_bg .company_block .container
+    {
+        width: 696px;
+    }
+    .company .company_bg .company_block .company_name,
+    .company .company_bg .company_block .company_stars
+    {
+        text-align: center;
+    }   
+    
+    .company .company_bg .company_block .company_logo
+    {
+        display: block;
+        margin: 22px auto 0;
+    } 
+    
+     .sort a
+    {
+        padding: 9px 28px;
+    }
+    
+    .usefull_art .ua_block
+    {
+        margin-bottom: 70px;
+    }
+    
+    .usefull_art
+    {
+    margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    .company .company_bg .company_block .container
+    {
+        width: inherit;    
+    }
+    
+}
+
+@media (max-width: 685px)
+{
+     .sort a
+    {
+        margin-right: 5px;    
+    }
+    
+     .payment a
+    {
+       margin-right: 5px; 
+    }
+    
+}
+
+
+
+@media (max-width: 635px)  
+{  
+     .sort p,  .payment p,  .age p
+    {
+        font-size: 14px;        
+    }
+     .sort a
+    {
+        padding: 9px 23px;
+    }
+}
+
+@media (max-width: 575px) 
+{
+     .sort .sort_left img,  .payment .payment_left img
+    {
+        display: none;
+    }
+    
+     .sort a
+    {
+        padding: 9px 10px;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .company .company_bg .company_block .info_line .il_right
+    {
+        width: 80px;
+    } 
+     .sort a
+    {
+        padding: 9px 8px;
+        
+    }
+    
+     .payment .payment_right img
+    {
+        margin: 3px auto 0;
+    }
+    
+     .payment a
+    {
+        width: 50px;
+        height: 50px;
+    }
+    
+     .payment a:first-child
+    {
+        padding: 12px 8px;
+    }
+    
+     .age .age_right button
+    {
+	   width: 168px;
+    }
+    
+    .company .company_bg .company_block .info_line img 
+    {
+        margin-right: 0;
+        width: 27px;
+        height: 28px;
+    }
+ 
+}
+
+@media (max-width: 390px)
+{
+    .company .company_bg .company_block .info_line .il_left 
+    {
+        margin-right: 34px;
+    }
+}
+
+@media (max-width: 350px)
+{
+    .company .company_bg .company_block .info_line .il_left
+    {
+        margin-right: 20px;
+        font-size: 15px;
+        
+    } 
+    
+    .company .company_bg .company_block .info_line .il_right
+    {
+        font-size: 15px;
+    }     
+}
+

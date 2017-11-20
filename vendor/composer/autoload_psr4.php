@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'yii\\swiftmailer\\' => array($vendorDir . '/yiisoft/yii2-swiftmailer'),
     'yii\\jui\\' => array($vendorDir . '/yiisoft/yii2-jui'),
+    'yii\\httpclient\\' => array($vendorDir . '/yiisoft/yii2-httpclient'),
     'yii\\gii\\' => array($vendorDir . '/yiisoft/yii2-gii'),
     'yii\\faker\\' => array($vendorDir . '/yiisoft/yii2-faker'),
     'yii\\debug\\' => array($vendorDir . '/yiisoft/yii2-debug'),
@@ -15,6 +16,7 @@ return array(
     'yii\\bootstrap\\' => array($vendorDir . '/yiisoft/yii2-bootstrap'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'rmrevin\\yii\\fontawesome\\' => array($vendorDir . '/rmrevin/yii2-fontawesome'),
+    'recaptcha\\' => array($vendorDir . '/tonyaxo/yii2-recaptcha'),
     'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/type-resolver/src', $vendorDir . '/phpdocumentor/reflection-docblock/src'),
     'moonland\\phpexcel\\' => array($vendorDir . '/moonlandsoft/yii2-phpexcel'),
     'mihaildev\\elfinder\\' => array($vendorDir . '/mihaildev/yii2-elfinder'),

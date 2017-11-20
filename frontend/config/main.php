@@ -42,6 +42,16 @@ return [
             'showScriptName' => false,
             'rules' => [
                 '' => 'site/index',
+                [
+                    'pattern' => 'krediti/<alias:[\w\-]+>',
+                    'route' =>'company/company',
+                    'suffix' => '.html'
+                ],
+                [
+                    'pattern' => 'vse-kompanii',
+                    'route' =>'company/vse-kompanii',
+                    'suffix' => '.html'
+                ],
                 '<_a:about>' => 'site/<_a>',
                 'contact' => 'contact/index',
                 'signup' => 'auth/signup/signup',
@@ -55,6 +65,11 @@ return [
         ],
         'assetManager' => [
             'appendTimestamp' => true,
+        ],
+        'recaptcha' => [
+            'class' => 'recaptcha\ReCaptchaComponent',
+            'siteKey' => '6LcAgDgUAAAAAJ5b9RKGDADYlY7juZdMOBMR9Gbg',
+            'secretKey' => '6LcAgDgUAAAAAOg6y-y4KmoJYZ9nZfQwyUHY6zL3',
         ],
 
     ],

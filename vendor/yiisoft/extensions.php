@@ -156,4 +156,22 @@ return array (
       '@elisdn/compositeForm' => $vendorDir . '/elisdn/yii2-composite-form/src',
     ),
   ),
+  'yiisoft/yii2-httpclient' => 
+  array (
+    'name' => 'yiisoft/yii2-httpclient',
+    'version' => '2.0.5.0',
+    'alias' => 
+    array (
+      '@yii/httpclient' => $vendorDir . '/yiisoft/yii2-httpclient',
+    ),
+  ),
+  'tonyaxo/yii2-recaptcha' => 
+  array (
+    'name' => 'tonyaxo/yii2-recaptcha',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@recaptcha' => $vendorDir . '/tonyaxo/yii2-recaptcha',
+    ),
+  ),
 );
