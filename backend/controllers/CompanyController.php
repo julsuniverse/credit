@@ -2,6 +2,8 @@
 
 namespace backend\controllers;
 
+use src\forms\company\CompanyForm;
+use src\services\company\CompanyService;
 use Yii;
 use src\entities\company\Company;
 use backend\search\CompanySearch;
@@ -14,6 +16,19 @@ use yii\filters\VerbFilter;
  */
 class CompanyController extends Controller
 {
+    private $companyService;
+
+    public function __construct(
+        $id,
+        $module,
+        CompanyService $companyService,
+        array $config = []
+    )
+    {
+        $this->companyService = $companyService;
+        parent::__construct($id, $module, $config);
+    }
+
     /**
      * @inheritdoc
      */
@@ -33,14 +48,15 @@ class CompanyController extends Controller
      * Lists all Company models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionIndex($active=false)
     {
         $searchModel = new CompanySearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $active);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'active'=>$active
         ]);
     }
 
@@ -63,16 +79,26 @@ class CompanyController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Company();
+        $form = new CompanyForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+        if ($form->load(Yii::$app->request->post()) && $form->validate()) {
+            try
+            {
+                $product = $this->service->create($form);
+                return $this->redirect(['view', 'id' => $product->id]);
+            }
+            catch(\DomainException $e)
+            {
+                Yii::$app->session->setFlash('error', $e->getMessage());
+            }
         }
+
+        return $this->render('create', [
+            'model' => $form,
+        ]);
+
     }
+
 
     /**
      * Updates an existing Company model.
@@ -82,15 +108,25 @@ class CompanyController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
+        $company = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+        $form = new CompanyForm($company);
+        if ($form->load(Yii::$app->request->post()) && $form->validate())
+        {
+            try
+            {
+                $company = $this->service->edit($form, $company->id);
+                return $this->redirect(['view', 'id' => $company->id]);
+            }
+            catch(\DomainException $e)
+            {
+                Yii::$app->session->setFlash('error', $e->getMessage());
+            }
         }
+        return $this->render('update', [
+            'model' => $form,
+            'company' => $company
+        ]);
     }
 
     /**

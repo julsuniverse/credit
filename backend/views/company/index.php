@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Url;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $searchModel backend\search\CompanySearch */
@@ -12,46 +13,29 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="company-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
     <p>
-        <?= Html::a('Create Company', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать компанию', ['create'], ['class' => 'btn btn-success']) ?> <?= Html::a('Загрузить из файла', ['load'], ['class' => 'btn btn-primary']) ?>
     </p>
+    <div class="row">
+        <div class="col-sm-3">
+            <li class="list-group-item" style="<?php if(!$active){echo "background-color: #f2f2f2;";} ?>">
+                <a style="<?php if(!$active){echo "text-decoration: underline;";} ?>" href="<?= Url::toRoute(["company/index"]);?>">Все</a>
+            </li>
+            <li class="list-group-item" style="<?php if($active){echo "background-color: #f2f2f2;";} ?>">
+                <a style="<?php if($active){echo "text-decoration: underline;";} ?>" href="<?= Url::toRoute(["company/index", 'active'=>1]);?>">Активные</a>
+            </li>
+        </div>
+    </div>
 <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
+            ['class' => 'yii\grid\ActionColumn'],
             'name',
             'alias',
             'h1',
-            'desc',
-            // 'text',
-            // 'photo',
-            // 'message',
-            // 'vk_group',
-            // 'fb_group',
-            // 'max_sum',
-            // 'max_termin',
-            // 'age',
-            // 'time_rewiew',
-            // 'pay',
-            // 'stars',
-            // 'raiting',
-            // 'href',
-            // 'checked',
-            // 'overpayments',
-            // 'last_upd',
-            // 'on_main',
-            // 'recommended',
-            // 'seo_title',
-            // 'seo_desc',
-            // 'seo_keys',
-
-            ['class' => 'yii\grid\ActionColumn'],
+            'seo_title',
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>

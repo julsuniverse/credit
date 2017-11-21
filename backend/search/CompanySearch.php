@@ -19,7 +19,7 @@ class CompanySearch extends Company
     {
         return [
             [['id', 'max_sum', 'max_termin', 'age', 'stars', 'raiting', 'checked', 'overpayments', 'on_main', 'recommended'], 'integer'],
-            [['name', 'alias', 'h1', 'desc', 'text', 'photo', 'message', 'vk_group', 'fb_group', 'time_rewiew', 'pay', 'href', 'last_upd', 'seo_title', 'seo_desc', 'seo_keys'], 'safe'],
+            [['name', 'alias', 'h1', 'desc', 'text', 'photo', 'message', 'vk_group', 'fb_group', 'time_review', 'pay', 'href', 'last_upd', 'seo_title', 'seo_desc', 'seo_keys'], 'safe'],
         ];
     }
 
@@ -39,7 +39,7 @@ class CompanySearch extends Company
      *
      * @return ActiveDataProvider
      */
-    public function search($params)
+    public function search($params, $active)
     {
         $query = Company::find();
 
@@ -71,6 +71,13 @@ class CompanySearch extends Company
             'recommended' => $this->recommended,
         ]);
 
+        if($active){
+            $query->andWhere(['!=', 'href', '']);
+        }
+        else{
+            $query->andFilterWhere(['like', 'href', $this->href]);
+        }
+
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'alias', $this->alias])
             ->andFilterWhere(['like', 'h1', $this->h1])
@@ -80,7 +87,7 @@ class CompanySearch extends Company
             ->andFilterWhere(['like', 'message', $this->message])
             ->andFilterWhere(['like', 'vk_group', $this->vk_group])
             ->andFilterWhere(['like', 'fb_group', $this->fb_group])
-            ->andFilterWhere(['like', 'time_rewiew', $this->time_rewiew])
+            ->andFilterWhere(['like', 'time_review', $this->time_review])
             ->andFilterWhere(['like', 'pay', $this->pay])
             ->andFilterWhere(['like', 'href', $this->href])
             ->andFilterWhere(['like', 'last_upd', $this->last_upd])

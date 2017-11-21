@@ -27,4 +27,11 @@ class PageRepository
             throw new \DomainException('Рекомендуемые страницы не найдены');
         return $page;
     }
+
+    public function getBlog()
+    {
+        if(!$page = Page::find()->where(['like', 'alias', 'blog/'])->all())
+            throw new NotFoundHttpException('Страницы блога не найдены');
+        return $page;
+    }
 }

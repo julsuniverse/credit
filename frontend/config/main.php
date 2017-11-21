@@ -64,6 +64,7 @@ return [
                     'encodeParams' => false,
                     'suffix' => '.html'
                 ],
+                'blog' => 'blog/blog',
                 '<_a:about>' => 'site/<_a>',
                 'contact' => 'contact/index',
                 'signup' => 'auth/signup/signup',

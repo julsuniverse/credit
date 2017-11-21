@@ -1,12 +1,9 @@
 <?php
 
 namespace frontend\controllers;
-use src\entities\company\Company;
 use src\repositories\company\CompanyRepository;
 use src\repositories\page\OfferRepository;
 use src\repositories\page\PageRepository;
-use Yii;
-use yii\web\BadRequestHttpException;
 
 class PageController extends \yii\web\Controller
 {

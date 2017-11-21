@@ -1,9 +1,10 @@
 <?php
 
-namespace src\forms;
+namespace src\forms\company;
 
 use elisdn\compositeForm\CompositeForm;
 use src\entities\company\Company;
+use src\forms\SeoForm;
 
 /**
  * CompanyForm is the model behind the company form.
@@ -22,7 +23,7 @@ class CompanyForm extends CompositeForm
     public $max_sum;
     public $max_termin;
     public $age;
-    public $time_rewiew;
+    public $time_review;
     public $pay;
     public $stars;
     public $raiting;
