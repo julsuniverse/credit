@@ -45,9 +45,8 @@ class Offer extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'folder' => 'Folder',
-            'ids' => 'Ids',
+            'name' => 'Название',
+            'ids' => 'Офферы',
         ];
     }
 

@@ -2,7 +2,9 @@
 
 namespace backend\controllers;
 
+use moonland\phpexcel\Excel;
 use src\forms\company\CompanyForm;
+use src\forms\LoadFileForm;
 use src\services\company\CompanyService;
 use Yii;
 use src\entities\company\Company;
@@ -10,6 +12,7 @@ use backend\search\CompanySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * CompanyController implements the CRUD actions for Company model.
@@ -140,6 +143,45 @@ class CompanyController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+    }
+
+    public function actionLoad()
+    {
+        $model = new LoadFileForm();
+        $path = '../web/excel/';
+        if ($model->load(Yii::$app->request->post()))
+        {
+            if(UploadedFile::getInstance($model, 'file'))
+            {
+                $model->file=UploadedFile::getInstance($model, 'file');
+                $model->file->saveAs($path.$model->file->baseName.".".$model->file->extension);
+                $file=$path.$model->file->baseName.".".$model->file->extension;
+
+                $data = Excel::widget([
+                    'mode' => 'import',
+                    'fileName' => $file,
+                    'setFirstRecordAsKeys' => true,
+                ]);
+            }
+            foreach($data as $d)
+            {
+                $company = new Company();
+                $company->name = $d['Название']."";
+                $company->alias = $d['name-url']."";
+                $company->h1 = $d['h1']."";
+                $company->title = $d['title']."";
+                $company->seo_desc = $d['description']."";
+                $company->seo_keys = $d['keywords']."";
+                $company->vk_group = $d['Группа_VK']."";
+                $company->fb_group = $d['Группа_Fb']."";
+                $company->save();
+            }
+            return $this->redirect(['index']);
+        }
+
+        return $this->render('load', [
+            'model' => $model,
+        ]);
     }
 
     /**

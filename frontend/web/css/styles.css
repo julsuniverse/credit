@@ -2,6 +2,7 @@ div, button, a, input, select
 {
     outline: none;
 }
+
 .disabled {
     pointer-events: none; /* ������ ������ �������������� */
     cursor: default;  /* ������������� ������ � ���� ������� */

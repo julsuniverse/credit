@@ -21,9 +21,7 @@
                 'items' => [
                     ['label' => 'Управление', 'options' => ['class' => 'header']],
                     ['label' => 'Компании', 'icon' => 'fa fa-list-alt', 'url' => ['/company'], 'active' => $this->context->id == 'company'],
-                    ['label' => 'Верхнее меню', 'icon' => 'fa fa-list-alt', 'url' => ['/topmenu'], 'active' => $this->context->id == 'topmenu'],
-                    ['label' => 'Нижнее меню', 'icon' => 'fa fa-list-alt', 'url' => ['/bottommenu'], 'active' => $this->context->id == 'order'],
-                    ['label' => 'Меню в подвале', 'icon' => 'fa fa-list-alt', 'url' => ['/footermenu'], 'active' => $this->context->id == 'order'],
+                    ['label' => 'Все Меню', 'icon' => 'fa fa-list-alt', 'url' => ['/menu'], 'active' => $this->context->id == 'menu'],
                     ['label' => 'Страницы', 'icon' => 'fa fa-list-alt', 'url' => ['/page'], 'active' => $this->context->id == 'page'],
                     ['label' => 'Офферы', 'icon' => 'fa fa-list-alt', 'url' => ['/offer'], 'active' => $this->context->id == 'offer'],
                     ['label' => 'Отзывы', 'icon' => 'fa fa-list-alt', 'url' => ['/review'], 'active' => $this->context->id == 'review'],

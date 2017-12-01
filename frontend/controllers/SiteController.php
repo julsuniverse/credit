@@ -21,6 +21,7 @@ use src\forms\ContactForm;
  */
 class SiteController extends Controller
 {
+    public $layout="dengi";
     public function actions()
     {
         return [

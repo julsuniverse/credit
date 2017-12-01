@@ -77,16 +77,16 @@ class Review extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'text' => 'Text',
-            'user_id' => 'User ID',
-            'company_id' => 'Company ID',
-            'stars' => 'Stars',
-            'date' => 'Date',
-            'raiting' => 'Raiting',
-            'likes' => 'Likes',
+            'text' => 'Текст',
+            'user_id' => 'Пользователь',
+            'company_id' => 'Компания',
+            'stars' => 'Звезд',
+            'date' => 'Дата',
+            'raiting' => 'Рейтинг',
+            'likes' => 'Лайков',
             'user_ids_like' => 'User Ids Like',
             'user_ids_dislike' => 'User Ids Dislike',
-            'ball' => 'Ball',
+            'ball' => 'Балл',
         ];
     }
 

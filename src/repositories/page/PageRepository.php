@@ -16,7 +16,7 @@ class PageRepository
 
     public function getFreepage()
     {
-        if(!$page = Page::find()->select(['id'])->where(['folder' => ''])->orWhere(['folder'=>null])->all())
+        if(!$page = Page::find()->select(['id'])->where(['folder_id' => ''])->orWhere(['folder_id'=>null])->all())
             throw new NotFoundHttpException('Страница не найдена');
         return $page;
     }
@@ -33,5 +33,16 @@ class PageRepository
         if(!$page = Page::find()->where(['like', 'alias', 'blog/'])->all())
             throw new NotFoundHttpException('Страницы блога не найдены');
         return $page;
+    }
+
+    public function getIds($id)
+    {
+        $pages = Page::find()->where(['folder_id'=>$id])->all();
+        $ids=[];
+        foreach ($pages as $page)
+        {
+            $ids[$page->id]=$page->id;
+        }
+        return $ids;
     }
 }

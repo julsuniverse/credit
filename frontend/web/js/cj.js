@@ -106,3 +106,17 @@ $(document).scroll(function() {
         sochas=true;
     }
 });
+
+$(document).ready(function() {
+    if($('#page-recommended').val() == true)
+        $('.field-page-photo').css('display', 'block');
+    else
+        $('.field-page-photo').css('display', 'none');
+});
+
+$('#page-recommended').on('change', function(){
+    if($('#page-recommended').val() == true)
+        $('.field-page-photo').css('display', 'block');
+    else
+        $('.field-page-photo').css('display', 'none');
+});

@@ -13,4 +13,20 @@ class OfferRepository
         return $offer;
     }
 
+    public function getIds($id)
+    {
+        $pages= Offer::find()->where(['folder'=>$id])->all();
+        $ids=[];
+        foreach ($pages as $page)
+        {
+            $ids[$page->id]=$page->id;
+        }
+        return $ids;
+    }
+
+    public function getFreepage()
+    {
+        return Offer::find()->select(['id'])->where(['folder' => ''])->orWhere(['folder'=>null])->all();
+    }
+
 }
