@@ -1,0 +1,2444 @@
+[02-Dec-2017 15:49:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: main/company in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('company', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/company', Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=58589c9747b25d87053a9fe6f1c2636f; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiLLhhtcfSE9yobMxZcMTAAAAYA',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiLLhhtcfSE9yobMxZcMTAAAAYA',
+    'REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiLLhhtcfSE9yobMxZcMTAAAAYA',
+    'SCRIPT_URL' => '/main/company',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '178.136.184.6',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '14910',
+    'REDIRECT_URL' => '/frontend/web/main/company',
+    'REDIRECT_QUERY_STRING' => 'alias=kredito24',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'alias=kredito24',
+    'REQUEST_URI' => '/main/company?alias=kredito24',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512229767.0664598941802978515625,
+    'REQUEST_TIME' => 1512229767,
+]
+[02-Dec-2017 16:28:22 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: main/company in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('company', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/company', Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=4f61b836099f914042d4bc37478f5aa8194d38abb346a4e18ce899d83e29feb6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22LajRoI0-lAjsNg0nLluLUH8T1IFHV4Rk%22%3B%7D; advanced-frontend=a26fed5a88504912df493f20d286813f',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'BmpoIxsRo2KylYu-wN65hG0pO3P47xZ5Iv8YfUoD5e1KCwJxdFiTT97U4c2OuYnqIUVOP62nLi0Ttl41HDe3hg==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'HTTP_X_PJAX' => 'true',
+    'HTTP_X_PJAX_CONTAINER' => '#pjax-landing',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiLUphtcfSE9yobMxZcpFAAAAYg',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiLUphtcfSE9yobMxZcpFAAAAYg',
+    'REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiLUphtcfSE9yobMxZcpFAAAAYg',
+    'SCRIPT_URL' => '/main/company',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '178.136.184.6',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '16383',
+    'REDIRECT_URL' => '/frontend/web/main/company',
+    'REDIRECT_QUERY_STRING' => 'alias=kredito24&_pjax=%23pjax-landing',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'alias=kredito24&_pjax=%23pjax-landing',
+    'REQUEST_URI' => '/main/company?alias=kredito24&_pjax=%23pjax-landing',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512232102.7574279308319091796875,
+    'REQUEST_TIME' => 1512232102,
+]
+[02-Dec-2017 16:28:22 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: main/company in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('company', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/company', Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=4f61b836099f914042d4bc37478f5aa8194d38abb346a4e18ce899d83e29feb6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22LajRoI0-lAjsNg0nLluLUH8T1IFHV4Rk%22%3B%7D; advanced-frontend=a26fed5a88504912df493f20d286813f',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiLUpqe31CntE-f3wCCPDwAAAsQ',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiLUpqe31CntE-f3wCCPDwAAAsQ',
+    'REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiLUpqe31CntE-f3wCCPDwAAAsQ',
+    'SCRIPT_URL' => '/main/company',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '178.136.184.6',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '16385',
+    'REDIRECT_URL' => '/frontend/web/main/company',
+    'REDIRECT_QUERY_STRING' => 'alias=kredito24',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'alias=kredito24',
+    'REQUEST_URI' => '/main/company?alias=kredito24',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512232102.88687801361083984375,
+    'REQUEST_TIME' => 1512232102,
+]
+[02-Dec-2017 16:28:31 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: main/company in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('company', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/company', Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=4f61b836099f914042d4bc37478f5aa8194d38abb346a4e18ce899d83e29feb6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22LajRoI0-lAjsNg0nLluLUH8T1IFHV4Rk%22%3B%7D; advanced-frontend=a26fed5a88504912df493f20d286813f',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiLUr2kpMPTe-nLPa6aRyQAAAMI',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiLUr2kpMPTe-nLPa6aRyQAAAMI',
+    'REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiLUr2kpMPTe-nLPa6aRyQAAAMI',
+    'SCRIPT_URL' => '/main/company',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '178.136.184.6',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '16395',
+    'REDIRECT_URL' => '/frontend/web/main/company',
+    'REDIRECT_QUERY_STRING' => 'alias=kredito24',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'alias=kredito24',
+    'REQUEST_URI' => '/main/company?alias=kredito24',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512232111.8852379322052001953125,
+    'REQUEST_TIME' => 1512232111,
+]
+[03-Dec-2017 10:52:58 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "css/images/ui-icons_777777_256x240.png". in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/images/ui-i...', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=708e2c8bda38323f3da8ef24f33b38cbf9c3f550b1b214ee28ee482e546572b9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22g5x_jIyVljdHRRCk2_EYZHezOKI08Aia%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/css/jquery-ui.min.css?v=1510167723',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiPXihtxky5t@w92852XXAAAAYM',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/css/images/ui-icons_777777_256x240.png',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/css/images/ui-icons_777777_256x240.png',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiPXihtxky5t@w92852XXAAAAYM',
+    'REDIRECT_SCRIPT_URL' => '/css/images/ui-icons_777777_256x240.png',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/css/images/ui-icons_777777_256x240.png',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiPXihtxky5t@w92852XXAAAAYM',
+    'SCRIPT_URL' => '/css/images/ui-icons_777777_256x240.png',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/css/images/ui-icons_777777_256x240.png',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '77.239.162.74',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '10271',
+    'REDIRECT_URL' => '/frontend/web/css/images/ui-icons_777777_256x240.png',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/css/images/ui-icons_777777_256x240.png',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512298378.380796909332275390625,
+    'REQUEST_TIME' => 1512298378,
+]
+[03-Dec-2017 10:52:58 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "css/images/ui-icons_444444_256x240.png". in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/images/ui-i...', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=708e2c8bda38323f3da8ef24f33b38cbf9c3f550b1b214ee28ee482e546572b9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22g5x_jIyVljdHRRCk2_EYZHezOKI08Aia%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/css/jquery-ui.min.css?v=1510167723',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiPXirs6JR-Cj2UAVR3bmAAAAMY',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/css/images/ui-icons_444444_256x240.png',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/css/images/ui-icons_444444_256x240.png',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiPXirs6JR-Cj2UAVR3bmAAAAMY',
+    'REDIRECT_SCRIPT_URL' => '/css/images/ui-icons_444444_256x240.png',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/css/images/ui-icons_444444_256x240.png',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiPXirs6JR-Cj2UAVR3bmAAAAMY',
+    'SCRIPT_URL' => '/css/images/ui-icons_444444_256x240.png',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/css/images/ui-icons_444444_256x240.png',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '77.239.162.74',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '10270',
+    'REDIRECT_URL' => '/frontend/web/css/images/ui-icons_444444_256x240.png',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/css/images/ui-icons_444444_256x240.png',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512298378.3720519542694091796875,
+    'REQUEST_TIME' => 1512298378,
+]
+[03-Dec-2017 14:45:57 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "yii=admin". in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('yii=admin', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=708e2c8bda38323f3da8ef24f33b38cbf9c3f550b1b214ee28ee482e546572b9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22g5x_jIyVljdHRRCk2_EYZHezOKI08Aia%22%3B%7D; advanced-frontend=baebb0468cca24b08fbfe0a92fdd3086',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiQOJCYB66jEvWJIXGTZ5wAAAc8',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/yii=admin',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/yii=admin',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiQOJCYB66jEvWJIXGTZ5wAAAc8',
+    'REDIRECT_SCRIPT_URL' => '/yii=admin',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/yii=admin',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiQOJCYB66jEvWJIXGTZ5wAAAc8',
+    'SCRIPT_URL' => '/yii=admin',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/yii=admin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '77.239.162.74',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '14190',
+    'REDIRECT_URL' => '/frontend/web/yii=admin',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/yii=admin',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512312356.980370998382568359375,
+    'REQUEST_TIME' => 1512312356,
+]
+[09-Dec-2017 11:36:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "subscribe/index". in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('subscribe/index', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=83f80f2fe76b7430349441595efd0c1233a50bbfb4c4486eba4796aec3be2226a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B9ErSFlZYQ1Ji--dI6S9jOL_-WVoHMJG%22%3B%7D; advanced-backend=b6240ba23291410e1df72eace9676a26; _csrf-backend=f3fa7c589ea4a5adcfddcd4b8c3aece030bb42ec2392ac79bc60e044d9b7e9a6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%225shz46Vp_8Wo-tX8MHNUjMhdl6bvCgUn%22%3B%7D; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WivKpVel4x6yudsYKN0lPwAAAQY',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/subscribe',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/subscribe',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WivKpVel4x6yudsYKN0lPwAAAQY',
+    'REDIRECT_SCRIPT_URL' => '/subscribe',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/subscribe',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WivKpVel4x6yudsYKN0lPwAAAQY',
+    'SCRIPT_URL' => '/subscribe',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/subscribe',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '11826',
+    'REDIRECT_URL' => '/frontend/web/subscribe',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/subscribe',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512819365.578813076019287109375,
+    'REQUEST_TIME' => 1512819365,
+]
+[09-Dec-2017 16:21:54 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'CKw_wPrUDcDGcNoRE5lQGJxDdPk4p0gz6Sw-Uc9BlAll4FzysaQ5orcb70JY0DxLqCo4o0ieGAK5FGRghRWmRw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNolOKUz0zRnLqu@Xp1QAAAcs',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNolOKUz0zRnLqu@Xp1QAAAcs',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNolOKUz0zRnLqu@Xp1QAAAcs',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17508',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836514.7044560909271240234375,
+    'REQUEST_TIME' => 1512836514,
+]
+[09-Dec-2017 16:21:54 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'CKw_wPrUDcDGcNoRE5lQGJxDdPk4p0gz6Sw-Uc9BlAll4FzysaQ5orcb70JY0DxLqCo4o0ieGAK5FGRghRWmRw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNoiGQFxBQBgMpL3@lzgAAAQc',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNoiGQFxBQBgMpL3@lzgAAAQc',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNoiGQFxBQBgMpL3@lzgAAAQc',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17509',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836514.81797695159912109375,
+    'REQUEST_TIME' => 1512836514,
+]
+[09-Dec-2017 16:21:54 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'CKw_wPrUDcDGcNoRE5lQGJxDdPk4p0gz6Sw-Uc9BlAll4FzysaQ5orcb70JY0DxLqCo4o0ieGAK5FGRghRWmRw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNoiIUiboTOr4D76aJdAAAAJQ',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNoiIUiboTOr4D76aJdAAAAJQ',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNoiIUiboTOr4D76aJdAAAAJQ',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17505',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836514.830463886260986328125,
+    'REQUEST_TIME' => 1512836514,
+]
+[09-Dec-2017 16:21:54 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'CKw_wPrUDcDGcNoRE5lQGJxDdPk4p0gz6Sw-Uc9BlAll4FzysaQ5orcb70JY0DxLqCo4o0ieGAK5FGRghRWmRw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNorxA2ZUB3QZe2HCI7gAAAVQ',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNorxA2ZUB3QZe2HCI7gAAAVQ',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNorxA2ZUB3QZe2HCI7gAAAVQ',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17506',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836514.825951099395751953125,
+    'REQUEST_TIME' => 1512836514,
+]
+[09-Dec-2017 16:21:54 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'CKw_wPrUDcDGcNoRE5lQGJxDdPk4p0gz6Sw-Uc9BlAll4FzysaQ5orcb70JY0DxLqCo4o0ieGAK5FGRghRWmRw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNoimxwtJyJUS0F-jUGQAAAYc',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNoimxwtJyJUS0F-jUGQAAAYc',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNoimxwtJyJUS0F-jUGQAAAYc',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17507',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836514.8700339794158935546875,
+    'REQUEST_TIME' => 1512836514,
+]
+[09-Dec-2017 16:21:54 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'CKw_wPrUDcDGcNoRE5lQGJxDdPk4p0gz6Sw-Uc9BlAll4FzysaQ5orcb70JY0DxLqCo4o0ieGAK5FGRghRWmRw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNomFYBKI6TCgXZyLdXQAAAsw',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNomFYBKI6TCgXZyLdXQAAAsw',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNomFYBKI6TCgXZyLdXQAAAsw',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17510',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836514.857656002044677734375,
+    'REQUEST_TIME' => 1512836514,
+]
+[09-Dec-2017 16:21:54 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'CKw_wPrUDcDGcNoRE5lQGJxDdPk4p0gz6Sw-Uc9BlAll4FzysaQ5orcb70JY0DxLqCo4o0ieGAK5FGRghRWmRw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNog6I0l5qNo66W6BkoAAAAEw',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNog6I0l5qNo66W6BkoAAAAEw',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNog6I0l5qNo66W6BkoAAAAEw',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17513',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836514.8794610500335693359375,
+    'REQUEST_TIME' => 1512836514,
+]
+[09-Dec-2017 16:21:54 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'CKw_wPrUDcDGcNoRE5lQGJxDdPk4p0gz6Sw-Uc9BlAll4FzysaQ5orcb70JY0DxLqCo4o0ieGAK5FGRghRWmRw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNoiIUiboTOr4D76aJdQAAAJY',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNoiIUiboTOr4D76aJdQAAAJY',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNoiIUiboTOr4D76aJdQAAAJY',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17514',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836514.95726108551025390625,
+    'REQUEST_TIME' => 1512836514,
+]
+[09-Dec-2017 16:22:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'iEIGQlBeB8_VG5gpGPTqwJnXxgD4DE7e7-8wLsXFG0flDmVwGy4zraRwrXpTvYaTrb6KWog1Hu-_12ofj5EpCQ==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNrVOKUz0zRnLqu@Xp7AAAAdI',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNrVOKUz0zRnLqu@Xp7AAAAdI',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNrVOKUz0zRnLqu@Xp7AAAAdI',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17523',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836525.260305881500244140625,
+    'REQUEST_TIME' => 1512836525,
+]
+[09-Dec-2017 16:22:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'iEIGQlBeB8_VG5gpGPTqwJnXxgD4DE7e7-8wLsXFG0flDmVwGy4zraRwrXpTvYaTrb6KWog1Hu-_12ofj5EpCQ==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNrSmxwtJyJUS0F-jUJAAAAYY',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNrSmxwtJyJUS0F-jUJAAAAYY',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNrSmxwtJyJUS0F-jUJAAAAYY',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17522',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836525.2602970600128173828125,
+    'REQUEST_TIME' => 1512836525,
+]
+[09-Dec-2017 16:22:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'iEIGQlBeB8_VG5gpGPTqwJnXxgD4DE7e7-8wLsXFG0flDmVwGy4zraRwrXpTvYaTrb6KWog1Hu-_12ofj5EpCQ==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNrSGQFxBQBgMpL3@l4wAAARg',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNrSGQFxBQBgMpL3@l4wAAARg',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNrSGQFxBQBgMpL3@l4wAAARg',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17524',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836525.2688419818878173828125,
+    'REQUEST_TIME' => 1512836525,
+]
+[09-Dec-2017 16:22:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'iEIGQlBeB8_VG5gpGPTqwJnXxgD4DE7e7-8wLsXFG0flDmVwGy4zraRwrXpTvYaTrb6KWog1Hu-_12ofj5EpCQ==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNrVOKUz0zRnLqu@Xp7QAAAdM',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNrVOKUz0zRnLqu@Xp7QAAAdM',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNrVOKUz0zRnLqu@Xp7QAAAdM',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17518',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836525.3035869598388671875,
+    'REQUEST_TIME' => 1512836525,
+]
+[09-Dec-2017 16:22:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'iEIGQlBeB8_VG5gpGPTqwJnXxgD4DE7e7-8wLsXFG0flDmVwGy4zraRwrXpTvYaTrb6KWog1Hu-_12ofj5EpCQ==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNrbxA2ZUB3QZe2HCI@wAAAUw',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNrbxA2ZUB3QZe2HCI@wAAAUw',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNrbxA2ZUB3QZe2HCI@wAAAUw',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17521',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836525.249546051025390625,
+    'REQUEST_TIME' => 1512836525,
+]
+[09-Dec-2017 16:22:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'iEIGQlBeB8_VG5gpGPTqwJnXxgD4DE7e7-8wLsXFG0flDmVwGy4zraRwrXpTvYaTrb6KWog1Hu-_12ofj5EpCQ==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNrWFYBKI6TCgXZyLdZgAAAtM',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNrWFYBKI6TCgXZyLdZgAAAtM',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNrWFYBKI6TCgXZyLdZgAAAtM',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17525',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836525.3065330982208251953125,
+    'REQUEST_TIME' => 1512836525,
+]
+[09-Dec-2017 16:22:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'iEIGQlBeB8_VG5gpGPTqwJnXxgD4DE7e7-8wLsXFG0flDmVwGy4zraRwrXpTvYaTrb6KWog1Hu-_12ofj5EpCQ==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNrRdlM-ROw9iu@Fst8wAAAAw',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNrRdlM-ROw9iu@Fst8wAAAAw',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNrRdlM-ROw9iu@Fst8wAAAAw',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17526',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836525.4031810760498046875,
+    'REQUEST_TIME' => 1512836525,
+]
+[09-Dec-2017 16:22:05 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'iEIGQlBeB8_VG5gpGPTqwJnXxgD4DE7e7-8wLsXFG0flDmVwGy4zraRwrXpTvYaTrb6KWog1Hu-_12ofj5EpCQ==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNrXV@DofPSdVv2Xm0CAAAANM',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNrXV@DofPSdVv2Xm0CAAAANM',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNrXV@DofPSdVv2Xm0CAAAANM',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17527',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836525.443460941314697265625,
+    'REQUEST_TIME' => 1512836525,
+]
+[09-Dec-2017 16:22:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'huiN-VjykeEVD0icOa_6MyWeXykvtBd0B9sIMEk3quHrpO7LE4Klg2Rkfc9y5pZgEfcTc1-NR0VX41IBA2OYrw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNwymxwtJyJUS0F-jUUgAAAZA',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNwymxwtJyJUS0F-jUUgAAAZA',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNwymxwtJyJUS0F-jUUgAAAZA',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17537',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836547.5099198818206787109375,
+    'REQUEST_TIME' => 1512836547,
+]
+[09-Dec-2017 16:22:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'huiN-VjykeEVD0icOa_6MyWeXykvtBd0B9sIMEk3quHrpO7LE4Klg2Rkfc9y5pZgEfcTc1-NR0VX41IBA2OYrw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNww6I0l5qNo66W6Bk1gAAAEg',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNww6I0l5qNo66W6Bk1gAAAEg',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNww6I0l5qNo66W6Bk1gAAAEg',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17536',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836547.5980880260467529296875,
+    'REQUEST_TIME' => 1512836547,
+]
+[09-Dec-2017 16:22:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'huiN-VjykeEVD0icOa_6MyWeXykvtBd0B9sIMEk3quHrpO7LE4Klg2Rkfc9y5pZgEfcTc1-NR0VX41IBA2OYrw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNw2FYBKI6TCgXZyLdgAAAAsM',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNw2FYBKI6TCgXZyLdgAAAAsM',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNw2FYBKI6TCgXZyLdgAAAAsM',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17542',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836547.6320040225982666015625,
+    'REQUEST_TIME' => 1512836547,
+]
+[09-Dec-2017 16:22:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'huiN-VjykeEVD0icOa_6MyWeXykvtBd0B9sIMEk3quHrpO7LE4Klg2Rkfc9y5pZgEfcTc1-NR0VX41IBA2OYrw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNwyGQFxBQBgMpL3@l-AAAAQs',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNwyGQFxBQBgMpL3@l-AAAAQs',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNwyGQFxBQBgMpL3@l-AAAAQs',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17541',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836547.6239750385284423828125,
+    'REQUEST_TIME' => 1512836547,
+]
+[09-Dec-2017 16:22:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'huiN-VjykeEVD0icOa_6MyWeXykvtBd0B9sIMEk3quHrpO7LE4Klg2Rkfc9y5pZgEfcTc1-NR0VX41IBA2OYrw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNww6I0l5qNo66W6Bk1wAAAFA',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNww6I0l5qNo66W6Bk1wAAAFA',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNww6I0l5qNo66W6Bk1wAAAFA',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17543',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836547.6615030765533447265625,
+    'REQUEST_TIME' => 1512836547,
+]
+[09-Dec-2017 16:22:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'huiN-VjykeEVD0icOa_6MyWeXykvtBd0B9sIMEk3quHrpO7LE4Klg2Rkfc9y5pZgEfcTc1-NR0VX41IBA2OYrw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNwxdlM-ROw9iu@FsuGAAAAAw',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNwxdlM-ROw9iu@FsuGAAAAAw',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNwxdlM-ROw9iu@FsuGAAAAAw',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17544',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836547.668179988861083984375,
+    'REQUEST_TIME' => 1512836547,
+]
+[09-Dec-2017 16:22:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'huiN-VjykeEVD0icOa_6MyWeXykvtBd0B9sIMEk3quHrpO7LE4Klg2Rkfc9y5pZgEfcTc1-NR0VX41IBA2OYrw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNw3V@DofPSdVv2Xm0MwAAANM',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNw3V@DofPSdVv2Xm0MwAAANM',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNw3V@DofPSdVv2Xm0MwAAANM',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17545',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836547.6767470836639404296875,
+    'REQUEST_TIME' => 1512836547,
+]
+[09-Dec-2017 16:22:27 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#4 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: id in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('link', Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/link', Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => 'googtrans=/ru/ru; _csrf-frontend=93f42edd1fd630e88055856ee7ea8680daaf949cd9cda2ed98c8dc50306e902ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mLc2Kp4bqk5SKIlS4iLZp9P1P8Z1JT2N%22%3B%7D; advanced-frontend=06ff95a26cb25000927b4a9876ac232a; _csrf-backend=980c6e4790bfd35e735b0a8f16a60de7f45c1b701842b08904312f0b25341be1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Uw8frFpXY6iBFadRDPC4HyVL93dJ2ypM%22%3B%7D; advanced-backend=30045d90cfc23cb937c7f309f97a8277; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/types/kreditnye-kompanii.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'huiN-VjykeEVD0icOa_6MyWeXykvtBd0B9sIMEk3quHrpO7LE4Klg2Rkfc9y5pZgEfcTc1-NR0VX41IBA2OYrw==',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwNw7xA2ZUB3QZe2HCJMQAAAUU',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwNw7xA2ZUB3QZe2HCJMQAAAUU',
+    'REDIRECT_SCRIPT_URL' => '/main/link',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwNw7xA2ZUB3QZe2HCJMQAAAUU',
+    'SCRIPT_URL' => '/main/link',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/link',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '17546',
+    'REDIRECT_URL' => '/frontend/web/main/link',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/main/link',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512836547.7177269458770751953125,
+    'REQUEST_TIME' => 1512836547,
+]
+[09-Dec-2017 16:33:31 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: main/company in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('company', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('main/company', Array)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=a11d84ef8090d72b5a2521b16adc27e77296744def233972408d7a94ff8504dca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lYCq6T_p7hkabhc7fBosqiLYjrq4EVCn%22%3B%7D; _csrf-backend=69f3d9971c9159ee3c27297b12ac3aa8b1725f01994964bbfe8b56255a22f305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22XOdd_NkrFWtmU6yHSdWYgKaU_2bPU_Lb%22%3B%7D; advanced-backend=b14da6cbffacb166e9f41f1c6973684f; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwQW1OKUz0zRnLqu@Xv9gAAAcc',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwQW1OKUz0zRnLqu@Xv9gAAAcc',
+    'REDIRECT_SCRIPT_URL' => '/main/company',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwQW1OKUz0zRnLqu@Xv9gAAAcc',
+    'SCRIPT_URL' => '/main/company',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/main/company',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '18021',
+    'REDIRECT_URL' => '/frontend/web/main/company',
+    'REDIRECT_QUERY_STRING' => 'alias=kredito24',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'alias=kredito24',
+    'REQUEST_URI' => '/main/company?alias=kredito24',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512837211.934051990509033203125,
+    'REQUEST_TIME' => 1512837211,
+]
+[09-Dec-2017 16:49:26 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Страница не найдена in /home/tptohwig/public_html/credit/src/repositories/page/PageRepository.php:13
+Stack trace:
+#0 /home/tptohwig/public_html/credit/frontend/controllers/PageController.php(32): src\repositories\page\PageRepository->getPage('soc-kredit/v-de...')
+#1 [internal function]: frontend\controllers\PageController->actionLanding('soc-kredit/v-de...', false, false, false, false, false)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('landing', Array)
+#5 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('page/landing', Array)
+#6 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=a11d84ef8090d72b5a2521b16adc27e77296744def233972408d7a94ff8504dca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lYCq6T_p7hkabhc7fBosqiLYjrq4EVCn%22%3B%7D; _csrf-backend=69f3d9971c9159ee3c27297b12ac3aa8b1725f01994964bbfe8b56255a22f305a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22XOdd_NkrFWtmU6yHSdWYgKaU_2bPU_Lb%22%3B%7D; advanced-backend=b14da6cbffacb166e9f41f1c6973684f; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_REFERER' => 'http://credit.require-tests.s-host.net/age-kredit/18.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WiwUFg6I0l5qNo66W6ByygAAAEY',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/soc-kredit/v-dekrete.html.html',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/soc-kredit/v-dekrete.html.html',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WiwUFg6I0l5qNo66W6ByygAAAEY',
+    'REDIRECT_SCRIPT_URL' => '/soc-kredit/v-dekrete.html.html',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/soc-kredit/v-dekrete.html.html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WiwUFg6I0l5qNo66W6ByygAAAEY',
+    'SCRIPT_URL' => '/soc-kredit/v-dekrete.html.html',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/soc-kredit/v-dekrete.html.html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.34.204',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '10286',
+    'REDIRECT_URL' => '/frontend/web/soc-kredit/v-dekrete.html.html',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/soc-kredit/v-dekrete.html.html',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512838166.4513170719146728515625,
+    'REQUEST_TIME' => 1512838166,
+]
+[10-Dec-2017 15:40:29 UTC] An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#1 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Страница не найдена in /home/tptohwig/public_html/credit/src/repositories/page/PageRepository.php:13
+Stack trace:
+#0 /home/tptohwig/public_html/credit/frontend/controllers/PageController.php(32): src\repositories\page\PageRepository->getPage('age-kredit/2xzx...')
+#1 [internal function]: frontend\controllers\PageController->actionLanding('age-kredit/2xzx...', false, false)
+#2 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('landing', Array)
+#5 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('page/landing', Array)
+#6 /home/tptohwig/public_html/credit/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/tptohwig/public_html/credit/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,en-US;q=0.9,en;q=0.8,ru;q=0.7',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ym_uid=1484064123912977702; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; supportOnlineTalkID=3O1cTRB4PCeU2mQAvetfe6T1b8OZvbVL; _csrf-frontend=292e6f32006c46679496cfd40ae7dfb525077d820291019915af9bb76c9b257ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222sVfkzT7cl-Xi4VlNpj0HzcFwI99yBJr%22%3B%7D; _csrf-backend=661f8830ad81545e76b3d6de9904e0b9b43211db9a2e6bceb1d6bf47f1a1bd00a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sWjN4hHVZIg03-09WX9QCdGzSWj-aKBP%22%3B%7D; advanced-backend=e9239719bd0aa92ce500c6c5d4b6529c; _identity-backend=e9d92ed265cdffd64988031c34d95513b6ca7072399dd43fe9dbee2bd88f14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227Gg2vUHk0B6EfEqHurXDvUuQoOuhSKPX%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'credit.require-tests.s-host.net',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Wi1VbRw@VwdQbJXfvqavQwAAABA',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/age-kredit/2xzxz0.html',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/age-kredit/2xzxz0.html',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Wi1VbRw@VwdQbJXfvqavQwAAABA',
+    'REDIRECT_SCRIPT_URL' => '/age-kredit/2xzxz0.html',
+    'REDIRECT_SCRIPT_URI' => 'http://credit.require-tests.s-host.net/age-kredit/2xzxz0.html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Wi1VbRw@VwdQbJXfvqavQwAAABA',
+    'SCRIPT_URL' => '/age-kredit/2xzxz0.html',
+    'SCRIPT_URI' => 'http://credit.require-tests.s-host.net/age-kredit/2xzxz0.html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'credit.require-tests.s-host.net',
+    'SERVER_ADDR' => '176.111.49.33',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '93.127.39.114',
+    'DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/tptohwig/public_html/credit',
+    'SERVER_ADMIN' => 'webmaster@credit.require-tests.s-host.net',
+    'SCRIPT_FILENAME' => '/home/tptohwig/public_html/credit/frontend/web/index.php',
+    'REMOTE_PORT' => '16138',
+    'REDIRECT_URL' => '/frontend/web/age-kredit/2xzxz0.html',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/age-kredit/2xzxz0.html',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1512920429.8456709384918212890625,
+    'REQUEST_TIME' => 1512920429,
+]

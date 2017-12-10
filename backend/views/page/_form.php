@@ -83,16 +83,19 @@ mihaildev\elfinder\Assets::noConflict($this);
 
 </div>
 <?php
-/*
-$url2=Url::toRoute(["page/nameurl"]);
 $script = <<< JS
-    $('#page-h1').change(function(){
-       var name=$(this).val();
-      $.get('$url2', {name : name}, function(data){
-        var data= $.parseJSON(data);
-        $('#page-alias').val(data.alias);        
-       }); 
+    $(document).ready(function() {
+        if($('#page-recommended').val() == true)
+            $('.field-page-photo').css('display', 'block');
+        else
+            $('.field-page-photo').css('display', 'none');
+    });
+    $('#page-recommended').on('change', function(){
+        if($('#page-recommended').val() == true)
+            $('.field-page-photo').css('display', 'block');
+        else
+            $('.field-page-photo').css('display', 'none');
     });
 JS;
-$this->registerJs($script);*/
+$this->registerJs($script);
 ?>

@@ -4,6 +4,7 @@ namespace src\entities\company;
 
 use src\helpers\Aliaser;
 use yii\db\ActiveRecord;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "company".
@@ -51,9 +52,9 @@ class Company extends ActiveRecord
 
     public function setSeo($form)
     {
-        $this->seo_title = $form->seo_title;
-        $this->seo_desc = $form->seo_desc;
-        $this->seo_keys = $form->seo_keys;
+        $this->seo_title = $form->meta->seo_title;
+        $this->seo_desc = $form->meta->seo_desc;
+        $this->seo_keys = $form->meta->seo_keys;
     }
 
     public function setFields($form)
@@ -67,7 +68,7 @@ class Company extends ActiveRecord
         $this->max_termin = $form->max_termin;
         $this->age = $form->age;
         $this->time_review = $form->time_review;
-        $this->pay = $form->pay;
+        $this->pay = implode(',', $form->pay);
         $this->stars = $form->stars;
         $this->raiting = $form->raiting;
         $this->href = $form->href;
@@ -148,8 +149,19 @@ class Company extends ActiveRecord
         else if($this->max_termin>180) {$this->termin=round($this->max_termin/365, 2)." лет";}
     }
 
+
     public function getReviews()
     {
         return $this->hasMany(Review::className(), ['company_id' => 'id']);
+    }
+    public static function findAliases()
+    {
+        $aliases = self::find()->select('alias')->orderBy('name')->all();
+        $result = [];
+        $string = "krediti";
+        foreach ($aliases as $alias) {
+            $result['krediti/'.$alias->alias] = 'krediti/'.$alias->alias;
+        }
+        return $result;
     }
 }

@@ -1,47 +1,68 @@
 <?php
 namespace frontend\controllers;
 
-use src\services\auth\AuthService;
-use src\services\auth\PasswordResetService;
-use src\services\auth\SignupService;
-use src\services\contact\ContactService;
+use src\forms\CreditForm;
+use src\repositories\company\CompanyRepository;
 use Yii;
-use yii\web\BadRequestHttpException;
+use yii\helpers\Html;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use src\forms\LoginForm;
-use src\forms\PasswordResetRequestForm;
-use src\forms\ResetPasswordForm;
-use src\forms\SignupForm;
-use src\forms\ContactForm;
+use src\entities\Theme;
 
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
-    public $layout="dengi";
     public function actions()
     {
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
         ];
     }
+    
+    public $layout="dengi";
+
+    private $companies;
+
+    public function __construct(
+        $id,
+        $module,
+        CompanyRepository $companies,
+        array $config = []
+    )
+    {
+        $this->companies = $companies;
+        parent::__construct($id, $module, $config);
+    }
+    
     /**
      * Displays homepage.
      *
      * @return mixed
-     */
-    public function actionIndex()
+    */    
+    public function actionIndex($sum = false, $termin = false, $sortby=false, $sort=false)
     {
-        return $this->render('index');
+        $theme = Theme::dataIndex();
+        $model = new CreditForm();
+        $sum = $sum ? $sum : $theme->default_sum;
+        if ($model->load(Yii::$app->request->post()))
+        {
+            $sum = $model->sum ? Html::encode($model->sum) : $sum;
+            $termin = $model->termin ? Html::encode($model->termin) : $termin;
+        }
+        $companies= $this->companies->getCompaniesToMainPage($sum, $termin, $sortby, $sort);
+
+        return $this->render('index', [
+            'model' => $model,
+            'companies' => $companies,
+            'sum' => $sum,
+            'termin' => $termin,
+            'sortby' => $sortby,
+            'sort' => $sort,
+            'theme' => $theme
+        ]);
     }
 
     /**

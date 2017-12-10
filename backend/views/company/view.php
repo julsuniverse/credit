@@ -45,7 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'href',
             'checked:boolean',
             'overpayments',
-            'last_upd',
+            //'last_upd',
             'on_main:boolean',
             'recommended:boolean',
             'seo_title',

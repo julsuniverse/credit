@@ -25,6 +25,9 @@
                     ['label' => 'Страницы', 'icon' => 'fa fa-list-alt', 'url' => ['/page'], 'active' => $this->context->id == 'page'],
                     ['label' => 'Офферы', 'icon' => 'fa fa-list-alt', 'url' => ['/offer'], 'active' => $this->context->id == 'offer'],
                     ['label' => 'Отзывы', 'icon' => 'fa fa-list-alt', 'url' => ['/review'], 'active' => $this->context->id == 'review'],
+                    ['label' => 'Подписчики', 'icon' => 'fa fa-list-alt', 'url' => ['/subscribe'], 'active' => $this->context->id == 'subscribe'],
+                    
+                    ['label' => 'Переводы', 'icon' => 'fa fa-list-alt', 'url' => ['/message'], 'active' => $this->context->id == 'message'],
                     ['label' => 'Настройки + СЕО', 'icon' => 'fa fa-list-alt', 'url' => ['/theme/view?id=1'], 'active' => $this->context->id == 'order'],
                 ],
             ]

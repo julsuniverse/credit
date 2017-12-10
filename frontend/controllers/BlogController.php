@@ -23,7 +23,7 @@ use common\models\Theme;
 
 class BlogController extends \yii\web\Controller
 {
-    //public $layout="dengi";
+    public $layout="dengi";
     private $pages;
 
     public function __construct(

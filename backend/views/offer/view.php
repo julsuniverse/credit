@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use backend\models\Company;
+use src\entities\company\Company;
 /* @var $this yii\web\View */
 /* @var $model common\models\Offer */
 

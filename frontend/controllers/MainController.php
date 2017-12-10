@@ -2,33 +2,26 @@
 
 namespace frontend\controllers;
 use src\entities\company\Company;
+use src\forms\CreditForm;
+use src\repositories\company\CompanyRepository;
 use Yii;
-use frontend\models\CreditForm;
 use yii\helpers\Html;
-use common\models\Page;
-use common\models\Offer;
-use frontend\components\VkAuth;
-use frontend\components\FbAuth;
-use frontend\models\ReviewForm;
-use common\models\Review;
-use common\models\Bottommenu;
-use common\models\RecArticle;
-use common\models\RecCompany;
-use yii\helpers\Json;
-use frontend\components\Wall;
-use yii\web\BadRequestHttpException;
-use frontend\components\WallFB;
-use common\models\Theme;
 
 class MainController extends \yii\web\Controller
 {
     public $layout="dengi";
+    private $companies;
+    public function __construct($id, $module, CompanyRepository $companies, array $config = [])
+    {
+        $this->companies = $companies;
+        parent::__construct($id, $module, $config);
+    }
 
     public function actionIndex($ids=false, $sortby=false, $sort=false, $pay=false, $old=false)
     {
         $model=new CreditForm();
         $sharp='';
-        $default_sum = (new Theme)->getSum();
+        $default_sum = 3000;//(new Theme)->getSum();
         $sum=$default_sum;
         if ($model->load(Yii::$app->request->post()))
         {

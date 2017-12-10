@@ -11,6 +11,7 @@ class SetUp implements BootstrapInterface
 {
     public function bootstrap($app)
     {
+        $app->language = 'en-US';
         $container = \Yii::$container;
 
         $container->setSingleton(MailerInterface::class, function() use ($app)

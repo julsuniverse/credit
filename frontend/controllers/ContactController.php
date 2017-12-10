@@ -5,6 +5,8 @@ use src\services\contact\ContactService;
 use Yii;
 use yii\web\Controller;
 use src\forms\ContactForm;
+use yii\web\Response;
+use yii\widgets\ActiveForm;
 
 /**
  * Contact controller
@@ -23,31 +25,32 @@ class ContactController extends Controller
     }
 
      /**
-     * Displays contact page.
-     *
      * @return mixed
      */
     public function actionContact()
     {
-        $form = new ContactForm();
-        if ($form->load(Yii::$app->request->post()) && $form->validate()) {
-            try
-            {
-                $this->contactService->sendEmail($form);
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            }
-            catch(\DomainException $e)
-            {
-                Yii::$app->session->setFlash('error', $e->getMessage());
-            }
-
-            return $this->refresh();
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post())) {
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ActiveForm::validate($model);
         }
-
-        return $this->render('contact', [
-            'model' => $form,
-        ]);
+        /*if (!Yii::$app->request->isAjax) {
+            return null;        
+        }
+        $form = new ContactForm();
+        if ($form->load(Yii::$app->request->post())) {
+            if (!$form->validate()) {
+                return $form->getFirstError('email');
+            }
+            return $this->contactService->create($form);
+        }*/
     }
-
-
+    /*public function actionValidateSubscribe()
+    {
+        $model = new ContactForm();
+        if (Yii::$app->request->isAjax && $model->load(Yii::$app->request->post())) {
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ActiveForm::validate($model);
+        }
+    }*/
 }

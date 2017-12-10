@@ -75,14 +75,13 @@ class OfferController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             //print_r($model->ids);
             $model->ids = implode(",", $model->ids);
-            $model->save();
-            //print_r($model->ids);
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
+            if($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
+        } 
+        return $this->render('create', [
+            'model' => $model,
+        ]);
     }
     
     public function actionGetform($id)
@@ -115,13 +114,13 @@ class OfferController extends Controller
         $model->ids = explode(",", $model->ids);
         if ($model->load(Yii::$app->request->post()) ) {
             $model->ids = implode(",", $model->ids);
-            $model->save();
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**

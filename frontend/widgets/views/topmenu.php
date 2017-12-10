@@ -13,13 +13,13 @@ if ($this->beginCache("topmenu", ['duration' => 360])) { ?>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand logo_big" href="<?=Url::toRoute(['site/index']);?>"><img src="/frontend/web/img/logo.jpg"/></a>
-                <a class="navbar-brand logo_small" href="<?=Url::toRoute(['site/index']);?>"><img src="/frontend/web/img/logo_small.jpg"/></a>
+                <a class="navbar-brand logo_big" href="<?=Url::toRoute(['site/index']);?>"><img src="/frontend/web/img/logo.png"/></a>
+                <a class="navbar-brand logo_small" href="<?=Url::toRoute(['site/index']);?>"><img src="/frontend/web/img/logo.png"/></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav ultop">
                     <?php foreach($menu as $m) {?>
-                        <li><a href="<?= Url::toRoute(["page/landing", 'alias'=>$m->alias]);?>"><?= $m->name;?></a></li>
+                        <li><a href="/<?= $m->alias;?>.html"><?= $m->name;?></a></li>
                     <?php } ?>
                 </ul>
             </div>

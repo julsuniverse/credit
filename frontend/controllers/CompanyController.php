@@ -10,13 +10,14 @@ use src\services\company\CompanyService;
 use src\services\networks\Wall;
 use Yii;
 use src\services\networks\VkAuth;
+use src\entities\Theme;
 use src\services\networks\FbAuth;
 use yii\helpers\Json;
 use src\services\networks\WallFB;
 
 class CompanyController extends \yii\web\Controller
 {
-    //public $layout="dengi";
+    public $layout="dengi";
     private $companyService;
     private $companies;
     private $fbAuth;
@@ -48,20 +49,15 @@ class CompanyController extends \yii\web\Controller
         return parent::beforeAction($action);
     }
 
-    public function actionVseKompanii($sortby = false, $sort = false, $pay = false, $old = false)
+    public function actionVseKompanii($sortby = false, $sort = false)
     {
-        if($sortby || $pay || $old)
-            $comp_info = $this->companies->getCompaniesSortAll($sortby, $sort, $pay, $old);
-        else
-            $comp_info = $this->companies->getAllSortRaiting();
+        $comp_info = $this->companies->getCompaniesSortAll($sortby, $sort, $pay, $old);
 
         return $this->render('vse-kompanii',[
             'companies' => $comp_info,
             'sortby'=>$sortby,
             'sort'=>$sort,
-            'pay'=>$pay,
-            'old'=>$old,
-            //'theme'=>Theme::find()->where(['id'=>1])->one()
+            'theme'=>Theme::vseCompanii()
         ]);
     }
     public function actionWall($id)
@@ -81,6 +77,7 @@ class CompanyController extends \yii\web\Controller
         return $this->renderAjax('_wall', [
             'wall'=>$wall,
             'fb_wall'=>$fb_wall,
+            'company' => $company,
         ]);
     }
 

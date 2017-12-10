@@ -25,11 +25,11 @@ use mihaildev\elfinder\ElFinder;
 
     <?= $form->field($model, 'overpayments')->textInput() ?>
 
-    <?= $form->field($model, 'seo_title')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model->meta, 'seo_title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'seo_desc')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model->meta, 'seo_desc')->textArea(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'seo_keys')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model->meta, 'seo_keys')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'desc')->widget(CKEditor::className(), [
         'editorOptions' => ElFinder::ckeditorOptions(['elfinder'],[]),

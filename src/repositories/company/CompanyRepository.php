@@ -38,22 +38,47 @@ class CompanyRepository
         return $company;
     }
 
-    public function getCompaniesByIds($ids)
+    public function getCompaniesByIds($ids, $sortby, $sort)
     {
-        if(!$company = Company::find()->where(['id' => $ids])->orderBy('raiting DESC')->all())
-            throw new \DomainException('Компании не найдены');
-        return $company;
+        $comp_ids = explode(",", $ids);
+        $query = Company::find()->where(['id' => $comp_ids]);
+        $orderBy = $this->getSortData($sortby, $sort);
+        
+        $query = $query->orderBy($orderBy);
+
+        return $query->all();
     }
 
     public function getRec()
     {
-        if (!$company = Company::find()->where(['recommended' => 1])->limit(3)->orderBy('id DESC')->all()) {
-            throw new NotFoundHttpException('Компании не найдены');
-        }
-        return $company;
+        return Company::find()->where(['recommended' => 1])->limit(3)->orderBy('id DESC')->all();
     }
 
-    public function getCompaniesSort($ids, $sortby, $sort, $pay, $old)
+    /*public function getCompanies($sum=false, $termin=false)
+    {
+        if(!$sum) {$sum=50000;}
+        $query= Company::find()->where(['>=', 'max_sum', $sum])->andWhere(['!=', 'href', '']);
+        if($termin)
+        {
+            $query=$query->andWhere(['>=', 'max_termin', $termin]);
+        }
+
+        $query=$query->all();
+        $ids=$this->getIds($query);
+        return [$query, $ids];
+    }*/
+
+    /*public function getIds($companies)
+    {
+        $str="";
+        foreach($companies as $comp)
+        {
+            $str.=$comp->id.',';
+        }
+        return $str;
+    }*/
+
+    /*public function getCompaniesSort($ids, $sortby, $sort, $pay, $old)
     {
         $query = Company::find()->where(['id'=>array_filter(explode(',', $ids))]);
         if($old)
@@ -76,39 +101,38 @@ class CompanyRepository
         else
             $query=$query->orderBy('raiting DESC');
         return $query->all();
-    }
-
-    public function getCompaniesSortAll($sortby, $sort, $pay, $old)
+    }*/
+    
+    public function getCompaniesToMainPage($sum, $termin, $sortby, $sort)
     {
-        $query = Company::find();
-        if($old)
-            $query=$query->andWhere(['<=', 'age', $old]);
-
-        if($pay)
-        {
-            $pays = explode("-", $pay);
-            $str = "";
-            for($i = 0; $i < count($pays) - 1; $i++)
-                $str .= "`pay` like '%$pays[$i]%' OR ";
-            $str = substr($str, 0, -4);
-            $query = $query->andFilterWhere(['or',
-                $str
-            ]);
+        $query = Company::find()->where(['>=', 'max_sum', $sum])/*->andWhere(['on_main' => 1])*/;
+        if ($termin) {
+            $query = $query->andWhere(['>=', 'max_termin', $termin]);
         }
 
-        if($sortby)
-            $query = $query->orderBy($sortby.' '.$sort);
-        else
-            $query = $query->orderBy('raiting DESC');
+        $orderBy = $this->getSortData($sortby, $sort);
+        
+        $query = $query->orderBy($orderBy);
+
         return $query->all();
     }
 
-    public function getAllSortRaiting()
+    public function getCompaniesSortAll($sortby, $sort)
     {
-        if(!$company = Company::find()->orderBy('raiting DESC')->all()) {
-            throw new NotFoundHttpException('Компании не найдены');
-        }
-        return $company;
+        $query = Company::find();
 
+        $orderBy = $this->getSortData($sortby, $sort);
+        
+        $query = $query->orderBy($orderBy);
+
+        return $query->all();
+    }
+    
+    public function getSortData($sortby, $sort)
+    {
+        $sortby = in_array($sortby, ['max_sum', 'max_termin', 'raiting']) ? $sortby : 'raiting';
+        $sort = in_array($sort, ['DESC', 'ASC']) ? $sort : 'DESC';
+        
+        return $sortby.' '.$sort;
     }
 }

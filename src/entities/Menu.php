@@ -3,6 +3,8 @@
 namespace src\entities;
 
 use Yii;
+use src\entities\page\Page;
+use src\entities\company\Company;
 
 /**
  * This is the model class for table "menu".
@@ -47,5 +49,13 @@ class Menu extends \yii\db\ActiveRecord
             'placement' => 'Положение меню',
             'column' => 'Колонка',
         ];
+    }
+    
+    public function findAliases()
+    {
+        $pages = Page::findAliases();
+        $companies = Company::findAliases();
+        $array = ['vse-kompanii' => 'vse-kompanii', 'blog' => 'blog', 'about' => 'about'];
+        return array_merge($pages, $companies, $array);
     }
 }

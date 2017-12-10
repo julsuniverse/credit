@@ -87,7 +87,7 @@ class CompanyController extends Controller
         if ($form->load(Yii::$app->request->post()) && $form->validate()) {
             try
             {
-                $product = $this->service->create($form);
+                $product = $this->companyService->create($form);
                 return $this->redirect(['view', 'id' => $product->id]);
             }
             catch(\DomainException $e)
@@ -118,7 +118,7 @@ class CompanyController extends Controller
         {
             try
             {
-                $company = $this->service->edit($form, $company->id);
+                $company = $this->companyService->edit($form, $company->id);
                 return $this->redirect(['view', 'id' => $company->id]);
             }
             catch(\DomainException $e)

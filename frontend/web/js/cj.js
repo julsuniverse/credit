@@ -1,10 +1,8 @@
-
 $("#pjax-first").on("pjax:end", function() {
     var top = $('#companies').offset().top;
     $('body,html').animate({scrollTop: top}, 1000);
     dataklinktohref();
 });
-
 
 $("#torecomend").on("click", function(e) {
     e.preventDefault();
@@ -46,15 +44,17 @@ function dislikecomm(id)
 $('.foottitle').on('click', function(){
     if ($(window).width() <= '749'){
         var id=$(this).attr('data-acp');
-        if($('.acdiv'+id).css('display')=='none')
+        var acdiv = $(this).parent().find('.acdiv'+id);
+        var znak = $(this).parent().find('.znak'+id);
+        if(acdiv.css('display')=='none')
         {
-            $('.acdiv'+id).css('display', 'block');
-            $('.znak'+id).removeClass('fa-plus').addClass('fa-minus');
+            acdiv.css('display', 'block');
+            znak.removeClass('fa-plus').addClass('fa-minus');
         }
-        else if($('.acdiv'+id).css('display')=='block')
+        else if(acdiv.css('display')=='block')
         {
-            $('.acdiv'+id).css('display', 'none');
-            $('.znak'+id).removeClass('fa-minus').addClass('fa-plus');
+            acdiv.css('display', 'none');
+            znak.removeClass('fa-minus').addClass('fa-plus');
         }
     }
 });
@@ -83,29 +83,7 @@ $("#pjax-landing").on("pjax:end", function() {
 
 //view _wall
 
-var sochas=false;
-$(document).scroll(function() {
-    var top = $("#wall").offset().top;
-    var doctop=$("html").scrollTop();
-    var id = $('#wall').data('id');
-    if((doctop >= top - $(window).height()) && !sochas)
-    {
-        $.ajax({
-            url: '/company/wall',
-            type: 'GET',
-            data: {id : id},
-            success: function(data)
-            {
-                $('#wall').html(data); //вставляет хтмл в код
-            },
-            error: function()
-            {
-                alert('Не удалось получить стену');
-            }
-        });
-        sochas=true;
-    }
-});
+
 
 $(document).ready(function() {
     if($('#page-recommended').val() == true)

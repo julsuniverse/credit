@@ -8,7 +8,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel backend\search\CompanySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Companies';
+$this->title = 'Создать компанию';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="company-index">

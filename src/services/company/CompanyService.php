@@ -3,7 +3,7 @@
 namespace src\services\company;
 
 use src\entities\company\Company;
-use src\forms\CompanyForm;
+use src\forms\company\CompanyForm;
 use src\repositories\company\CompanyRepository;
 use src\services\Imager;
 
@@ -21,18 +21,18 @@ class CompanyService
     public function create(CompanyForm $form): Company
     {
         $company = Company::create($form->name, $form->h1);
-        $company->setSeo($form->meta);
-        $company->setPhoto($this->imager->savePhotos('photos', $company->photo, $form));
+        $company->setSeo($form);
+        $company->setPhoto($this->imager->savePhoto('photo', $company->photo, $form));
         $company->setFields($form);
 
         return $this->companies->save($company);
     }
 
-    public function edit(CompanyForm $form, Company $id): Company
+    public function edit(CompanyForm $form, int $id): Company
     {
         $company = $this->companies->get($id);
         $company->setSeo($form);
-        $company->setPhoto($this->imager->savePhotos('photos', $company->photo, $form));
+        $company->setPhoto($this->imager->savePhoto('photo', $company->photo, $form));
         $company->setFields($form);
 
         return $this->companies->save($company);

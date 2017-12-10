@@ -5,7 +5,6 @@ return [
         '@bower'=>'@vendor/bower-asset',
         '@npm'=>'@vendor/npm-asset'
     ],
-    'bootstrap'=>['\common\bootstrap\SetUp'],
     'language' => 'ru-RU',
     'components' => [
         'cache' => [

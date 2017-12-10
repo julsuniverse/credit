@@ -32,7 +32,8 @@ class Offer extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'ids'], 'required'],
-            [['folder', 'ids'], 'integer'],
+            [['folder'], 'integer'],
+            ['ids', 'safe'],
             [['name'], 'string', 'max' => 255],
             [['folder'], 'exist', 'skipOnError' => true, 'targetClass' => Folderoffer::className(), 'targetAttribute' => ['folder' => 'id']],
         ];

@@ -1,4 +1,6 @@
 <?php
+use yii\i18n\DbMessageSource;
+
 $params = array_merge(
     require(__DIR__ . '/../../common/config/params.php'),
     require(__DIR__ . '/../../common/config/params-local.php'),
@@ -9,8 +11,9 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log', '\frontend\config\SetUp'],
     'controllerNamespace' => 'frontend\controllers',
+    'language' => 'ru-RU',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
@@ -59,12 +62,17 @@ return [
                     'suffix' => '.html'
                 ],
                 [
+                    'pattern' => 'blog',
+                    'route' => 'blog/blog',
+                    'encodeParams' => false,
+                    'suffix' => '.html'
+                ],
+                [
                     'pattern' => '<alias:.+>',
                     'route' => 'page/landing',
                     'encodeParams' => false,
                     'suffix' => '.html'
                 ],
-                'blog' => 'blog/blog',
                 '<_a:about>' => 'site/<_a>',
                 'contact' => 'contact/index',
                 'signup' => 'auth/signup/signup',
@@ -76,6 +84,17 @@ return [
                 '<_c:[\w\-]+>/<id:\d+>/<_a:[\w\-]+>' => '<_c>/<_a>',
             ],
         ],
+        'i18n' => [
+            'translations' => [
+                'main' => [
+                    'class' => DbMessageSource::className(),
+                    'sourceLanguage' => 'ru-RU',
+                    'enableCaching' => true,
+                    'cachingDuration' => 10,
+                    'forceTranslation' => true,
+                ],
+            ],
+        ],
         'assetManager' => [
             'appendTimestamp' => true,
         ],
@@ -84,7 +103,6 @@ return [
             'siteKey' => '6LcAgDgUAAAAAJ5b9RKGDADYlY7juZdMOBMR9Gbg',
             'secretKey' => '6LcAgDgUAAAAAOg6y-y4KmoJYZ9nZfQwyUHY6zL3',
         ],
-
     ],
     'params' => $params,
 ];

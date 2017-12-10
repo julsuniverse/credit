@@ -59,7 +59,7 @@ class CompanyForm extends CompositeForm
             $this->max_termin = $company->max_termin;
             $this->age = $company->age;
             $this->time_review = $company->time_review;
-            $this->pay = $company->pay;
+            $this->pay = explode(',', $company->pay);
             $this->stars = $company->stars;
             $this->raiting = $company->raiting;
             $this->href = $company->href;
@@ -84,7 +84,7 @@ class CompanyForm extends CompositeForm
         return [
             [['name', 'alias', 'h1'], 'required'],
             [['max_sum', 'max_termin', 'age', 'stars', 'raiting', 'checked', 'overpayments', 'on_main', 'recommended'], 'integer'],
-            [['name', 'alias', 'h1', 'desc', 'text','message', 'vk_group', 'fb_group', 'time_review', 'href', 'last_upd', 'seo_title', 'seo_desc', 'seo_keys'], 'string', 'max' => 255],
+            [['name', 'alias', 'h1', 'desc', 'text','message', 'vk_group', 'fb_group', 'time_review', 'href', 'seo_title', 'seo_desc', 'seo_keys'], 'string', 'max' => 255],
             ['pay', 'each', 'rule' => ['string']],
             ['photo','file','skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg, gif', 'checkExtensionByMimeType'=>false],
 

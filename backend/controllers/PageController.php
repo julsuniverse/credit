@@ -38,11 +38,11 @@ class PageController extends Controller
 
     public function actionIndex($id = false)
     {
-        $id ? $ids = $this->pages->getIds($id) : $free = $this->pages->getFreepage();
-        /*if($id)
+        //$id ? $ids = $this->pages->getIds($id) : $free = $this->pages->getFreepage();
+        if($id)
             $ids = $this->pages->getIds($id);
         else
-            $free = $this->pages->getFreepage();*/
+            $free = $this->pages->getFreepage();
 
         $foldername = $this->folders->getFoldername($id);
         $searchModel = $this->searchModel;

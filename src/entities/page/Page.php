@@ -93,4 +93,9 @@ class Page extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Offer::className(), ['id' => 'offer_id']);
     }
+    
+    public static function findAliases()
+    {
+        return self::find()->select('alias')->indexBy('alias')->orderBy('h1')->column();
+    }
 }

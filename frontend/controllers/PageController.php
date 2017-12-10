@@ -7,7 +7,7 @@ use src\repositories\page\PageRepository;
 
 class PageController extends \yii\web\Controller
 {
-   // public $layout="dengi";
+    public $layout="dengi";
     private $pages;
     private $companies;
     private $offers;
@@ -27,32 +27,22 @@ class PageController extends \yii\web\Controller
         parent::__construct($id, $module, $config);
     }
 
-    public function actionLanding($alias, $ids=false, $sortby=false, $sort=false, $pay=false, $old=false)
+    public function actionLanding($alias, $sortby=false, $sort=false)
     {
         $page = $this->pages->getPage($alias);
 
         if($page->offer_id)
         {
-            if($ids) {
-                $comp_info = $this->companies->getCompaniesSort($ids, $sortby, $sort, $pay, $old);
-            }
-            else {
-                $comp_ids = $this->offers->getOffer($page->offer_id);
-                $ids = $comp_ids;
-                $comp_ids = explode(",", $comp_ids);
-                $comp_info = $this->companies->getCompaniesByIds($comp_ids);
-            }
+            $comp_ids = $this->offers->getOffer($page->offer_id);
+            $comp_info = $this->companies->getCompaniesByIds($comp_ids, $sortby, $sort);
         }
 
         $articles = $this->pages->getRec();
         return $this->render('landing',[
             'page' => $page,
             'comp_info' => $comp_info,
-            'ids'=>$ids,
             'sortby'=>$sortby,
             'sort'=>$sort,
-            'pay'=>$pay,
-            'old'=>$old,
             'articles' => $articles,
         ]);
     }
@@ -64,8 +54,7 @@ class PageController extends \yii\web\Controller
         if($page->offer_id)
         {
             $comp_ids = $this->offers->getOffer($page->offer_id);
-            $comp_ids = explode(",", $comp_ids);
-            $comp_info = $this->companies->getCompaniesByIds($comp_ids);
+            $comp_info = $this->companies->getCompaniesByIds($comp_ids, $sortby, $sort);
         }
 
         return $this->render('landing-amp',[

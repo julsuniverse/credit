@@ -15,7 +15,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'alias')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'alias')->widget(Select2::className(), [
+        'data' => $model->findAliases(),
+        'size' => Select2::MEDIUM,
+        'pluginOptions' => [
+            'allowClear' => true,
+            'placeholder' => '',
+        ],
+    ]); ?>
 
     <?= $form->field($model, 'placement')->widget(Select2::className(), [
         'data' => [0 => 'Верхнее меню', 1 => 'Нижнее меню', 2 => 'Меню в подвале'],

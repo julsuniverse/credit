@@ -3,7 +3,6 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\Pjax;
 use common\models\Theme;
-//$theme=Theme::find()->where(['id'=>1])->one();
 $this->title = $theme->seo_title_blog;
 $this->registerMetaTag([ 
     'name'=>'description', 
@@ -16,7 +15,7 @@ $this->registerMetaTag([
 ?>
 <div class="container landing">
     <div class="lan_title">
-        <h1>Все статьи</h1>
+        <h1><?= Yii::t('app', 'Все статьи');?></h1>
         <img src="/frontend/web/img/lend_title.png" alt="<?= $theme->seo_title_blog;?>" />
     </div>
 <div class="company_list"> 
@@ -38,7 +37,7 @@ $this->registerMetaTag([
                                     echo $text.'...';
                                     ?>
                                     <div>
-                                        <a href="<?=Url::toRoute(['main/landing', 'alias' =>$article->alias]);?>">Читать дальше <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                        <a href="<?=Url::toRoute(['main/landing', 'alias' =>$article->alias]);?>"><?= Yii::t('app', 'Читать дальше');?> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                                     </div>
                                     
                                 </div>      
@@ -52,7 +51,7 @@ $this->registerMetaTag([
     <?php $i++; } } else {?>
     <div class="company">
         <div class="row">
-            <h4 class="nocompanies">К сожалению, сатаей пока что нет.</h4>
+            <h4 class="nocompanies"><?= Yii::t('app', 'К сожалению, сатаей пока что нет.');?></h4>
         </div>
     </div> 
     <?php }?>

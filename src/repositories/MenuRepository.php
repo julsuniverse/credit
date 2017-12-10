@@ -14,14 +14,14 @@ class MenuRepository
 
     public static function getBottomMenuPages()
     {
-        if(!$pages = Menu::find()->select(['name', 'alias', 'column'])->where(['placement' => 1])->all())
+        if(!$pages = Menu::find()->where(['placement' => 1])->orderBy('column')->all())
             throw new \DomainException('Пункты меню не найдены');
         return $pages;
     }
 
     public static function getFooterMenuPages()
     {
-        if(!$pages = Menu::find()->select(['name', 'alias', 'column'])->where(['placement' => 2])->all())
+        if(!$pages = Menu::find()->where(['placement' => 2])->orderBy('column')->all())
             throw new \DomainException('Пункты меню не найдены');
         return $pages;
     }

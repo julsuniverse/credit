@@ -20,9 +20,13 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/cj.js',
+        'js/jquery-ui.min.js',
+        'js/jquery.ui.touch-punch.min.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
+
     ];
 }

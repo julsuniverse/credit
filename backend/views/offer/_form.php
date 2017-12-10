@@ -3,8 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use kartik\select2\Select2;
-use backend\models\Company;
-use backend\models\Folderoffer;
+use src\entities\company\Company;
+use src\entities\page\Folderoffer;
 /* @var $this yii\web\View */
 /* @var $model common\models\Offer */
 /* @var $form yii\widgets\ActiveForm */

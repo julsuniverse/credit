@@ -38,7 +38,7 @@ $this->registerMetaTag([
                                 
                                 <div class="col-md-5 col-sm-12 col-xs-12">
                                     <div class="info_line">
-                                        <p class="il_left">Сумма до</p>
+                                        <p class="il_left"><?= Yii::t('app', 'Сумма до');?></p>
                                         <div class="il_right">
                                             <p><?= $comp->max_sum;?> р.</p>
                                         </div>
@@ -46,14 +46,14 @@ $this->registerMetaTag([
                                         <div class="clear"></div>
                                     </div>
                                     <div class="info_line">
-                                        <p class="il_left">Срок до</p>
+                                        <p class="il_left"><?= Yii::t('app', 'Срок до');?></p>
                                         <div class="il_right">
                                             <p><?= $comp->termin;?></p>
                                         </div>
                                         <div class="clear"></div>
                                     </div>
                                     <div class="info_line">
-                                        <p class="il_left">Рассмотрение</p>
+                                        <p class="il_left"><?= Yii::t('app', 'Рассмотрение');?></p>
                                         <div class="il_right">
                                             <p><?= $comp->watch;?></p>
                                         </div>
@@ -61,9 +61,9 @@ $this->registerMetaTag([
                                     </div>
                                     <?php if($comp->overpayments){?>
                                         <div class="info_line">
-                                            <p class="il_left il_leftlast">Переплата за 10000</p>
+                                            <p class="il_left il_leftlast"><?= Yii::t('app', 'Переплата за 10000');?></p>
                                             <div class="il_right">
-                                                <p><?=$comp->overpayments;?><span> за 14 дней</span></p>
+                                                <p><?=$comp->overpayments;?><span> <?= Yii::t('app', 'за 14 дней');?></span></p>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -74,7 +74,7 @@ $this->registerMetaTag([
                                     <a href="<?= $comp->href;?>" data-id="<?=$comp->id;?>" class="getcredit<?php if(!$comp->href) { echo " disabled";} ?>">
                                         <div class="button_bg">
                                             <div class="button">
-                                                Оформить займ
+                                                <?= Yii::t('app', 'Оформить займ');?>
                                             </div>
                                         </div>
                                     </a>
@@ -89,7 +89,7 @@ $this->registerMetaTag([
     <?php } } else {?>
     <div class="company">
         <div class="row">
-            <h4 class="nocompanies">По таким условиям кредитных предложений нет, измените условия поиска.</h4>
+            <h4 class="nocompanies"><?= Yii::t('app', 'По таким условиям кредитных предложений нет, измените условия поиска.');?></h4>
         </div>
     </div> 
     <?php }?>
