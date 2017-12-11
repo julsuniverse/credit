@@ -17,7 +17,6 @@ $this->registerMetaTag([
 <div class="container landing">
     <div class="lan_title">
         <h1>Все статьи</h1>
-        <img src="/frontend/web/img/lend_title.png" alt="<?= $theme->seo_title_blog;?>" />
     </div>
 <div class="company_list"> 
     <?php $i = 0; if($articles) {  foreach($articles as $article){ ?>

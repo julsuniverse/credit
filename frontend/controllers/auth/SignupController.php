@@ -16,7 +16,7 @@ class SignupController extends Controller
     /**
      * @inheritdoc
      */
-    private $signupService;
+   /* private $signupService;
     private $passwordResetService;
     private $contactService;
     private $authService;
@@ -44,11 +44,6 @@ class SignupController extends Controller
         ];
     }
 
-    /**
-     * Signs user up.
-     *
-     * @return mixed
-     */
     public function actionSignup()
     {
         $form = new SignupForm();
@@ -86,6 +81,6 @@ class SignupController extends Controller
             throw new BadRequestHttpException($e->getMessage());
 
         }
-    }
+    }*/
 
 }

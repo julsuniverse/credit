@@ -438,10 +438,10 @@
 
 .usefull_art .ua_block
 {
-    border: 3px solid #8fcdc0;
-    border-radius: 30px;
+    border: 3px solid #1c85a7;
     max-height: 345px;
     height: 345px;
+    background-color: #f4fcfe;
 }
 
 .usefull_art .ua_block img
@@ -450,15 +450,15 @@
     margin: -40px auto 0;
     height: 120px;
     width: 120px;
-    border: 3px solid #8fcdc0;
+    border: 3px solid #1c85a7;
     border-radius: 100%;
 }
 
 .usefull_art .ua_block .ua_block_title
 {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
-    padding: 0 54px;
+    padding: 5px;
     margin:  15px 0 17px;
 }
 
@@ -476,9 +476,9 @@
 .usefull_art .ua_block p
 {
     font-family: Roboto-Light;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
-    padding: 0 26px 35px;
+    padding: 5px;
 }
 
 .usefull_art .ua_block .dashed_line

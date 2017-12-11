@@ -21,27 +21,27 @@ $this->registerMetaTag([
                     </div>
                 </div>
                 <div class="right">
-                    <p>Максимальная сумма кредита<span><?=$company->max_sum;?> грн.</span></p>
-                    <p>Срок кредитования до<span><?=$company->termin;?></span></p>
+                    <p><?= Yii::t('app', 'Максимальная сумма кредита');?><span><?=$company->max_sum;?> <?= Yii::t('app', 'p.');?></span></p>
+                    <p><?= Yii::t('app', 'Срок кредитования до');?><span><?=$company->termin;?></span></p>
                     <?php if($company->overpayments){?>
-                    <p>Переплата за 10000, за 14 дней<span> <?=$company->overpayments;?> грн.</span></p>
+                    <p><?= Yii::t('app', 'Переплата за 10000, за 14 дней');?><span> <?=$company->overpayments;?> <?= Yii::t('app', 'р.');?></span></p>
                     <?php }?>
-                    <p>Способ выплаты<span>
+                    <p><?= Yii::t('app', 'Способ выплаты');?><span>
                         <?php if(strpos($company->pay, '2')!==false){?>
-                        <amp-img width="38" height="35" src="/frontend/web/img/opl1.png" alt="На карту" title="На карту"></amp-img>
+                        <amp-img width="38" height="35" src="/frontend/web/img/opl1.png" alt="<?= Yii::t('app', 'На карту');?>" title="<?= Yii::t('app', 'На карту');?>"></amp-img>
                         <?php }?>
                         <?php if(strpos($company->pay, '1')!==false){?>
-                        <amp-img width="38" height="35" src="/frontend/web/img/opl2.png" alt="Наличными" title="Наличными"></amp-img>
+                        <amp-img width="38" height="35" src="/frontend/web/img/opl2.png" alt="<?= Yii::t('app', 'Наличными');?>" title="<?= Yii::t('app', 'Наличными');?>"></amp-img>
                         <?php }?>
                         <?php if(strpos($company->pay, '3')!==false){?>
-                        <amp-img width="38" height="35" src="/frontend/web/img/olp3.png" alt="На дом" title="На дом"></amp-img>
+                        <amp-img width="38" height="35" src="/frontend/web/img/olp3.png" alt="<?= Yii::t('app', 'На дом');?>" title="<?= Yii::t('app', 'На дом');?>"></amp-img>
                         <?php }?>
                         <?php if(strpos($company->pay, '4')!==false){?>
-                        <amp-img width="38" height="35" src="/frontend/web/img/opl4.png" alt="Яндекс.Деньги" title="Яндекс.Деньги"></amp-img>
+                        <amp-img width="38" height="35" src="/frontend/web/img/opl4.png" alt="<?= Yii::t('app', 'Яндекс.Деньги');?>" title="<?= Yii::t('app', 'Яндекс.Деньги');?>"></amp-img>
                         <?php }?>
                     </span></p>
-                    <p>Возраст заемщика<span>от <?=$company->age;?></span></p>
-                    <p>Рейтинг<span>
+                    <p><?= Yii::t('app', 'Возраст заемщика');?><span><?= Yii::t('app', 'от');?> <?=$company->age;?></span></p>
+                    <p><?= Yii::t('app', 'Рейтинг');?><span>
                         <?php 
                         echo $company->stars.' / 5';
                         ?>
@@ -55,24 +55,24 @@ $this->registerMetaTag([
         </div>
         <?php if($company->href){?>
         <div class="findk">
-            <a data-id="<?=$company->id;?>" class="getcredit" href="<?=$company->href;?>" target="_blank"><span>Получить кредит</span></a>
+            <a data-id="<?=$company->id;?>" class="getcredit" href="<?=$company->href;?>" target="_blank"><span><?= Yii::t('app', 'Получить кредит');?></span></a>
         </div> 
         <?php } else {?>
         <div class="nofindk">
             <span>
-            К сожалению, на данный момент компания не выдает займы.<br />
-            Попробуйте <a id="torecomend" href="#recomend">похожие предложения</a>
+            <?= Yii::t('app', 'К сожалению, на данный момент компания не выдает займы.');?><br />
+            <?= Yii::t('app', 'Попробуйте');?> <a id="torecomend" href="#recomend"><?= Yii::t('app', 'похожие предложения');?></a>
             </span>
         </div>
         <?php }?>
     </div>
     <div class="container reviews">
         <div class="pod_title">
-            <h2>ОТЗЫВЫ о <?=$company->h1;?></h2>
+            <h2><?= Yii::t('app', 'ОТЗЫВЫ о');?> <?=$company->h1;?></h2>
         </div>
         <?php if(!$company->comments){?>
         <div class="noreviews">
-            <div class="alert alert-warning" role="alert">Отзывов пока что нет.</div>
+            <div class="alert alert-warning" role="alert"><?= Yii::t('app', 'Отзывов пока что нет.');?></div>
         </div>
         <?php } else { ?>
         <?php 
@@ -101,7 +101,7 @@ $this->registerMetaTag([
     </div>
     <div class="container recomend" id="recomend">
         <div class="pod_title">
-            <p class="ne_podhodit">Не подходит данный вариант? Посмотрите популярные предложения</p>
+            <p class="ne_podhodit"><?= Yii::t('app', 'Не подходит данный вариант? Посмотрите популярные предложения');?></p>
         </div>
         <div class="row">
             <amp-carousel height="495" layout="fixed-height" type="slides">
@@ -121,17 +121,17 @@ $this->registerMetaTag([
                             <td colspan="2" class="name_stars">
                                 <a href="<?=Url::toRoute(['main/company-amp', 'alias' =>$r->alias]);?>" class="title"><?= $r->name;?></a>
                                 <div>
-                                <?php echo '<b>рейтинг: </b>'.$r->stars.' / 5'; ?>
+                                <?php echo '<b>'.Yii::t('app', 'рейтинг:') . '</b>'.$r->stars.' / 5'; ?>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="sumsrok">
-                                <p>Сумма, (грн)</p>
-                                <p>Срок, (дн)</p>
+                                <p><?= Yii::t('app', 'Сумма, (р)');?></p>
+                                <p><?= Yii::t('app', 'Срок, (дн)');?></p>
                             </td>
                             <td class="sumsrokval">
-                                <p>до <?= $r->max_sum;?> руб</p>
+                                <p>до <?= $r->max_sum;?> <?= Yii::t('app', 'руб');?></p>
                                 <p><?= $r->termin;?></p>
                             </td>
                         </tr>
@@ -143,7 +143,7 @@ $this->registerMetaTag([
                     </table>
                    
                     <div class="findkrec">
-                        <a target="_blank" data-id="<?=$r->id;?>" class="getcredit" href="<?=$r->href;?>">Получить кредит</a>
+                        <a target="_blank" data-id="<?=$r->id;?>" class="getcredit" href="<?=$r->href;?>"><?= Yii::t('app', 'Получить кредит');?></a>
                     </div> 
                 </div>
             </div>

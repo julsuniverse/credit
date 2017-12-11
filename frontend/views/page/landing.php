@@ -159,7 +159,6 @@ $this->registerMetaTag([
                 <div class="usefull_art">
                     <div class="ua_title">
                         <div><?= Yii::t('app', 'Полезные статьи');?></div>
-                        <img src="/frontend/web/img/lend_title.png"/>
                     </div>
                     <div class="row">
                         <?php $i=1;
@@ -168,7 +167,7 @@ $this->registerMetaTag([
                             ?>
                             <div class="col-md-4 col-sm-12 col-xs-12">
                                 <div class="ua_block">
-                                    <img src="/frontend/web/img/<?= $a->photo ;?>" alt="<?= $a->h1 ;?>"/>
+                                    <img src="/frontend/web/img/<?= $a->photo ;?>"/>
                                     <div class="ua_block_title"><a href="<?=Url::toRoute(['main/landing', 'alias' =>$a->alias]);?>"><?= $a->h1 ;?></a></div>
                                     <div class="dashed_line"></div>
                                     <?php

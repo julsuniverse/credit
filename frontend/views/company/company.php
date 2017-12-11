@@ -24,7 +24,7 @@ $this->registerMetaTag([
                 <div class="compinfo">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-md-6 col-sm-7 col-xs-7">
                                 <h1><?=$company->h1;?></h1>
                                 <p class="stars">
                                 <span>
@@ -40,43 +40,43 @@ $this->registerMetaTag([
                                 </span>
                                 </p>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-md-6 col-sm-5 col-xs-5">
                                 <img class="logocomp" src="/frontend/web/img/<?=$company->photo;?>" alt="<?=$company->name;?>"/>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-md-6 col-sm-7 col-xs-7">
                                 <div class="left">
-                                    <p>Максимальная сумма кредита</p>
-                                    <p>Срок кредитования до</p>
+                                    <p><?= Yii::t('app', 'Максимальная сумма кредита');?></p>
+                                    <p><?= Yii::t('app', 'Срок кредитования до');?></p>
                                     <?php if($company->overpayments){?>
-                                        <p>Переплата за 10000, за 14 дней</p>
+                                        <p><?= Yii::t('app', 'Переплата за 10000, за 14 дней');?></p>
                                     <?php }?>
-                                    <p>Возраст заемщика</p>
-                                    <p>Способ выплаты</p>
+                                    <p><?= Yii::t('app', 'Возраст заемщика');?></p>
+                                    <p><?= Yii::t('app', 'Способ выплаты');?></p>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-md-6 col-sm-5 col-xs-5">
                                 <div class="right">
-                                    <p><span><?=$company->max_sum;?> р.</span></p>
+                                    <p><span><?=$company->max_sum;?> <?= Yii::t('app', 'р.');?></span></p>
                                     <p><span><?=$company->termin;?></span></p>
                                     <?php if($company->overpayments){?>
-                                        <p><span> <?=$company->overpayments;?> p.</span></p>
+                                        <p><span> <?=$company->overpayments;?> <?= Yii::t('app', 'p.');?></span></p>
                                     <?php }?>
                                     <p><span>от <?=$company->age;?></span></p>
                                     <p>
                                     <span>
                                         <?php if(strpos($company->pay, '2')!==false){?>
-                                            <img src="/frontend/web/img/opl1.png" alt="На карту" title="На карту"/>
+                                            <img src="/frontend/web/img/opl1.png" alt="<?= Yii::t('app', 'На карту');?>" title="<?= Yii::t('app', 'На карту');?>"/>
                                         <?php }?>
                                         <?php if(strpos($company->pay, '1')!==false){?>
-                                            <img src="/frontend/web/img/opl2.png" alt="Наличными" title="Наличными"/>
+                                            <img src="/frontend/web/img/opl2.png" alt="<?= Yii::t('app', 'Наличными');?>" title="<?= Yii::t('app', 'Наличными');?>"/>
                                         <?php }?>
                                         <?php if(strpos($company->pay, '3')!==false){?>
-                                            <img src="/frontend/web/img/olp3.png" alt="На дом" title="На дом"/>
+                                            <img src="/frontend/web/img/olp3.png" alt="<?= Yii::t('app', 'На дом');?>" title="<?= Yii::t('app', 'На дом');?>"/>
                                         <?php }?>
                                         <?php if(strpos($company->pay, '4')!==false){?>
-                                            <img src="/frontend/web/img/opl4.png" alt="Яндекс.Деньги" title="Яндекс.Деньги"/>
+                                            <img src="/frontend/web/img/opl4.png" alt="<?= Yii::t('app', 'Яндекс.Деньги');?>" title="<?= Yii::t('app', 'Яндекс.Деньги');?>"/>
                                         <?php }?>
                                     </span>
                                     </p>
@@ -90,13 +90,13 @@ $this->registerMetaTag([
                     </div>
                     <?php if($company->href){?>
                         <div class="findk">
-                            <a data-id="<?=$company->id;?>" class="getcredit" href="#" target="_blank">Получить кредит</a>
+                            <a data-id="<?=$company->id;?>" class="getcredit" href="#" target="_blank"><?= Yii::t('app', 'Получить кредит');?></a>
                         </div>
                     <?php } else {?>
                         <div class="nofindk">
                     <span>
-                    К сожалению, на данный момент компания не выдает займы.<br />
-                    Попробуйте <a id="torecomend" href="#recomend">похожие предложения</a>
+                    <?= Yii::t('app', 'К сожалению, на данный момент компания не выдает займы.');?><br />
+                    <?= Yii::t('app', 'Попробуйте');?> <a id="torecomend" href="#recomend"><?= Yii::t('app', 'похожие предложения');?></a>
                     </span>
                         </div>
                     <?php }?>
@@ -106,7 +106,7 @@ $this->registerMetaTag([
 
             <div class=" recomend" id="recomend">
                 <div class="pod_title">
-                    <p class="ne_podhodit">Не подходит данный вариант? Посмотрите популярные предложения</p>
+                    <p class="ne_podhodit"><?= Yii::t('app', 'Не подходит данный вариант? Посмотрите популярные предложения');?></p>
                 </div>
                 <div class="row">
                     <?php foreach($rec as $r){ ?>
@@ -135,11 +135,11 @@ $this->registerMetaTag([
                                     </tr>
                                     <tr>
                                         <td class="sumsrok">
-                                            <p>Сумма, (руб)</p>
-                                            <p>Срок, (дн)</p>
+                                            <p><?= Yii::t('app', 'Сумма, (руб)');?></p>
+                                            <p><?= Yii::t('app', 'Срок, (дн)');?></p>
                                         </td>
                                         <td class="sumsrokval">
-                                            <p>до <?= $r->max_sum;?> руб</p>
+                                            <p><?= Yii::t('app', 'до');?> <?= $r->max_sum;?> <?= Yii::t('app', 'руб');?></p>
                                             <p><?= $r->termin;?></p>
                                         </td>
                                     </tr>
@@ -150,10 +150,10 @@ $this->registerMetaTag([
                                     </tr>
                                 </table>
                                 <?php if($r->checked){ ?>
-                                    <span class="checked_strip">Проверено</span>
+                                    <span class="checked_strip"><?= Yii::t('app', 'Проверено');?></span>
                                 <?php } ?>
                                 <div class="findk">
-                                    <a target="_blank" data-id="<?=$r->id;?>" class="getcredit" href="#">Получить кредит</a>
+                                    <a target="_blank" data-id="<?=$r->id;?>" class="getcredit" href="#"><?= Yii::t('app', 'Получить кредит');?></a>
                                 </div>
                             </div>
                         </div>
@@ -172,11 +172,11 @@ $this->registerMetaTag([
     <?php Pjax::begin(['id' => 'company-pjax']); ?>
     <div class="container reviews">
         <div class="pod_title">
-            <h2>ОТЗЫВЫ о <?=$company->h1;?></h2>
+            <h2><?= Yii::t('app', 'ОТЗЫВЫ о');?> <?=$company->h1;?></h2>
         </div>
         <?php if(!$company->reviews){?>
             <div class="noreviews">
-                <div class="alert alert-warning" role="alert">Отзывов пока что нет.</div>
+                <div class="alert alert-warning" role="alert"><?= Yii::t('app', 'Отзывов пока что нет.');?></div>
             </div>
         <?php } else { ?>
         <?php
@@ -206,10 +206,10 @@ $this->registerMetaTag([
                         </div>
                         <p><?=$com->text;?></p>
                         <div class="likes">
-                            <span class="title">Отзыв полезен?</span>
+                            <span class="title"><?= Yii::t('app', 'Отзыв полезен?');?></span>
                             <span class="count_likes count_likes<?=$com->id;?>"> <?=$com->likes;?> </span>
-                            <span onclick="likecomm(<?=$com->id;?>)" class="like_plus" aria-hidden="true">Да</span>
-                            <span onclick="dislikecomm(<?=$com->id;?>)" class="like_minus"  aria-hidden="true">Нет</span>
+                            <span onclick="likecomm(<?=$com->id;?>)" class="like_plus" aria-hidden="true"><?= Yii::t('app', 'Да');?></span>
+                            <span onclick="dislikecomm(<?=$com->id;?>)" class="like_minus"  aria-hidden="true"><?= Yii::t('app', 'Нет');?></span>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -220,15 +220,15 @@ $this->registerMetaTag([
         <?php } }?>
         <div class="add_comment" id="add-review">
             <?php if(Yii::$app->user->isGuest){?>
-                <p class="add_title">Довольны работой компании или разочарованы? Оставьте свой отзыв!<br /></p><p class="add_title">Войти через:<br class="mobbr"/> <a href="<?=$fbhref;?>" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="<?=$vkhref?>" class="vk" data-pjax="0"><i class="fa fa-vk" aria-hidden="true"></i></a></p></p>
+                <p class="add_title"><?= Yii::t('app', 'Довольны работой компании или разочарованы? Оставьте свой отзыв!');?><br /></p><p class="add_title"><?=Yii::t('app', 'Войти через:');?><br class="mobbr"/> <a href="<?=$fbhref;?>" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="<?=$vkhref?>" class="vk" data-pjax="0"><i class="fa fa-vk" aria-hidden="true"></i></a></p></p>
             <?php } else {?>
-                <?=Html::a('Выйти', Url::to(['auth/auth/logout'], true), ['data-pjax'=>0, 'class'=> 'add_comment_logout', 'data' => ['method' => 'post']]);?>
-                <p class="add_review">Добавить отзыв</p>
+                <?=Html::a(Yii::t('app', 'Выйти'), Url::to(['auth/auth/logout'], true), ['data-pjax'=>0, 'class'=> 'add_comment_logout', 'data' => ['method' => 'post']]);?>
+                <p class="add_review"><?= Yii::t('app', 'Добавить отзыв');?></p>
                 <?php $f=ActiveForm::begin(['options'=>['data-pjax'=>true]]);?>
                 <div class="row">
                     <div class="star_input row">
                         <div class="col-md-3 col-sm-3 col-xs-3 review_mark">
-                            <span class="your_star">Ваша оценка:</span>
+                            <span class="your_star"><?= Yii::t('app', 'Ваша оценка:')?></span>
                         </div>
                         <div class="col-md-9 col-sm-9 col-xs-9">
 
@@ -245,7 +245,7 @@ $this->registerMetaTag([
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <?=$f->field($model, 'text')->textArea(['placeholder'=>'Напишите здесь Ваше мнение о компании...', 'class'=>'review_text'])->label('');?>
+                        <?=$f->field($model, 'text')->textArea(['placeholder' => Yii::t('app', 'Напишите здесь Ваше мнение о компании...'), 'class'=>'review_text'])->label('');?>
                         <?= $f->field($model, 'reCaptcha')->widget(ReCaptcha::className(), [
                             'id' => 'company-captcha',
                             'render' => ReCaptcha::RENDER_EXPLICIT,
@@ -254,7 +254,7 @@ $this->registerMetaTag([
                     <div class="col-md-12">
                         <div class="rew_bott">
                             <div class="review_button">
-                                <?= Html::submitButton('Добавить', ['name' => 'add-button']) ?>
+                                <?= Html::submitButton(Yii::t('app', 'Добавить'), ['name' => 'add-button']) ?>
                             </div>
                         </div>
 
@@ -284,11 +284,7 @@ $script_wall = <<< JS
                 data: {id : id},
                 success: function(data)
                 {
-                    $('#wall').html(data); //вставляет хтмл в код
-                },
-                error: function()
-                {
-                    alert('Не удалось получить стену');
+                    $('#wall').html(data);
                 }
             });
             sochas=true;
@@ -307,10 +303,10 @@ $this->registerJS($script_wall)
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p class="modal-title" id="myModalLabel" style="font-size: 18px;">Ошибка</p>
+        <p class="modal-title" id="myModalLabel" style="font-size: 18px;"><?= Yii::t('app', 'Ошибка');?></p>
       </div>
       <div class="modal-body">
-        <p style="text-align: center;">Что бы оценить отзыв, нужно авторизоваться</p>
+        <p style="text-align: center;"><?= Yii::t('app', 'Что бы оценить отзыв, нужно авторизоваться');?></p>
       </div>
     </div>
   </div>

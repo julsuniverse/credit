@@ -50,11 +50,19 @@ foreach($footermenu as $f)
             </div>
         </div>
         <div class="col-sm-3 col-md-4 litcol">
-            <div class="last">
-                <a class="soca" target="__blank" href="<?=$theme->vk_link;?>"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="soca" target="__blank" href="<?=$theme->fb_link;?>"> <i class="fa fa-facebook" aria-hidden="true"></i> </a><br />
-                <a target="__blank" href="<?=$theme->site_link;?>"><img src="/frontend/web/img/foot_logo.png" alt="<?= Yii::t('app', 'Бистро Деньги');?>"/></a>
+            <div class="about_portal">
+                <p>
+                    <a href="<?= Url::toRoute(["page/landing", 'alias'=>'about']);?>"><?= Yii::t('app', 'О кредитном портале');?></a>
+                </p>
             </div>
-            <div class="about_portal"><a href="<?= Url::toRoute(["page/landing", 'alias'=>'about']);?>"><?= Yii::t('app', 'О кредитном портале');?></a></div>
+            <div class="last">
+                <a class="soca" target="__blank" href="<?=$theme->vk_link;?>">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a class="soca" target="__blank" href="<?=$theme->fb_link;?>">
+                    <i class="fa fa-facebook" aria-hidden="true"></i> 
+                </a>
+            </div>
         </div>
     </div>
 </div>

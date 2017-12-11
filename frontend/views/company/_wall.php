@@ -7,7 +7,7 @@
 <?php if($wall){?>
     <div class="container wall">
         <div class="row">
-            <h2>Новости от <?=$company->name;?></h2>
+            <h2><?= Yii::t('app', 'Новости от');?> <?=$company->name;?></h2>
             <?php
             for ($i = 1; $i < count($wall); $i++)
             {?>
@@ -46,7 +46,7 @@
     <div class="container wall">
         <hr />
         <div class="row">
-            <h2>Новости от <?=$company->name;?></h2>
+            <h2><?= Yii::t('app', 'Новости от');?> <?=$company->name;?></h2>
             <?php
             for ($i = 0; $i < count($fb_wall); $i++)
             { if($fb_wall[$i]->message){?>

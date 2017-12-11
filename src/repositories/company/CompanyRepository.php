@@ -105,7 +105,7 @@ class CompanyRepository
     
     public function getCompaniesToMainPage($sum, $termin, $sortby, $sort)
     {
-        $query = Company::find()->where(['>=', 'max_sum', $sum])/*->andWhere(['on_main' => 1])*/;
+        $query = Company::find()->where(['>=', 'max_sum', $sum])->andWhere(['on_main' => 1]);
         if ($termin) {
             $query = $query->andWhere(['>=', 'max_termin', $termin]);
         }
